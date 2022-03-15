@@ -119,7 +119,7 @@ Annat
 -------------------------------
 **/
 
-.låtar-titel {
+.låtar-titel  {
     display: flex; 
     justify-content: left;
     font-size: 20px; 
@@ -128,6 +128,9 @@ Annat
     margin-left: 20px;
 }
 
+.låtar-titel  p{
+    margin-bottom: 10px;
+}
 .låtar {
     margin: 4px, 4px;
     padding: 4px;
@@ -143,7 +146,7 @@ Annat
 }
 
 .Img-test{
-    margin-left: 0,2git rem;
+    margin-left: 0.2 rem;
 }
 
 .text{
@@ -153,6 +156,8 @@ Annat
 .text p{
     margin-left: 1.7rem;
     margin-right: 1.6rem;
+    font-size: 18px;
+    font-family: Tw Cen MT;
 }
 
 
@@ -164,9 +169,17 @@ Annat
 
 .artister-titel{
     display: flex; 
-    justify-content: center;
-    font-size: 30px; 
+    justify-content: left;
+    font-size: 20px; 
     font-weight: lighter;
+    font-family: segoe UI;
+    margin-left: 20px;
+
+}
+
+.artister-titel p{
+    margin-bottom: 10px;
+    margin-top: 30px;
 }
 
 .Artister {
@@ -198,13 +211,18 @@ Annat
 -------------------------------
 **/
 
-
-
 .album-titel{
     display: flex; 
-    justify-content: center;
-    font-size: 30px; 
+    justify-content: left;
+    font-size: 20px; 
     font-weight: lighter;
+    font-family: segoe UI;
+    margin-left: 20px;
+}
+
+.album-titel p{
+    margin-bottom: 10px;
+    margin-top: 30px;
 }
 
 .Album{
