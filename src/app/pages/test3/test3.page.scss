@@ -189,14 +189,46 @@ border: none;
 .icon-heart{
     font-size: 30px;
     color: white;
+    float: right;
+    margin-top: 4px;
+    margin-right: 10px;
 }
 
 .playlist-item{
     display: flex;
     width: 100%;
     align-items: center;
-    justify-content: center;
-    // background-color: yellow;     
+    // justify-content: center;
+    // background-color: yellow;
+    width: 80%;
+    margin-left: 10%;
+
+}
+
+.playlist-item p{
+    font-weight: bolder; 
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+.playlist-item2 p:nth-of-type(1){
+    margin-left: 44px;
+}
+
+.playlist-item2 p:nth-of-type(2){
+    margin-left: 10px; 
+    margin-right: 10px;
+}
+
+.playlist-item2{
+    display: flex;
+    width: 80%;
+    margin-left: 10%;
+    // justify-content: center;
+}
+
+.playlist-item2 p{
+    font-size: 12px;
 }
 
 .playlist-item img:nth-of-type(2){
