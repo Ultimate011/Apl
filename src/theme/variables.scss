@@ -3,6 +3,12 @@
 
 /** Ionic CSS Variables **/
 :root {
+
+  /** custom **/
+  --ion-color-orang-gradient: linear-gradient(90deg, rgba(249,182,106,1) 0%, rgba(201,100,26,1) 100%, rgba(201,100,26,1) 100%);
+
+
+
   /** primary **/
   --ion-color-primary: #3880ff;
   --ion-color-primary-rgb: 56, 128, 255;
