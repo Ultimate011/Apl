@@ -2,6 +2,15 @@ ion-content{
     --background: var(--ion-color-orang-gradient);
 }
 
+
+@font-face { 
+    src: url(TCM_____.TTF); 
+    font-family: Tw Cen MT;
+    src: url(seguisb.ttf);
+    font-family: segoe UI;
+
+}
+
 p{
     color: white;
 }
@@ -89,15 +98,18 @@ Annat
 .title{
     display: flex; 
     justify-content: center; 
-    font-size: 45px; 
-    font-weight: bold; 
-    margin: 0;
+    margin-top: 30px;
+    margin-left: 50px;
 }
 
 .title p{
 /*    margin: 20px;*/
     margin-bottom: 0;
-    margin-right: -66px;
+    font-size: 34px; 
+    font-family:Tw Cen MT;
+    margin: 0;
+    font-weight: semi bold;
+    justify-content: center;
 }
 
 /**
@@ -106,11 +118,13 @@ Annat
 -------------------------------
 **/
 
-.låtar-titel{
+.låtar-titel {
     display: flex; 
-    justify-content: center;
-    font-size: 30px; 
+    justify-content: left;
+    font-size: 20px; 
     font-weight: lighter;
+    font-family: segoe UI;
+    margin-left: 20px;
 }
 
 .låtar {
@@ -125,6 +139,10 @@ Annat
 .låtar img{
     border-radius: 20px;
     margin-left: 0.7rem;
+}
+
+.Img-test{
+    margin-left: 0,2git rem;
 }
 
 .text{
