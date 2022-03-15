@@ -1,0 +1,208 @@
+ion-content{
+    --background: var(--ion-color-orang-gradient);
+}
+
+p{
+    color: white;
+}
+
+.settings{
+    float: right;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    font-size: 34px; 
+    color: white;
+}
+
+
+
+/**
+-------------------------------
+            Navbar          
+-------------------------------
+**/
+
+.navbar svg{
+    margin-bottom: 3px;
+    margin-top: -500px; 
+    // padding-top: -100px;
+    // box-shadow: 3px 3px 3px 3px rgba(255, 255, 255, 0.2);
+    // box-shadow: 6px 3px 3px rgba(255, 255, 255, 0.4);
+    // border: 1px; 
+    // border-style: solid; 
+}
+
+.navbar{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(249,182,106,1) 0%, rgba(201,100,26,1) 100%, rgba(201,100,26,1) 100%);
+    // padding-top: 2%;
+    // border: 1px;
+    // border-style: solid hidden hidden hidden;
+    // border-color: white;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+    // border: 1px;
+    // border-style: solid;
+    // background-color: darkgrey;
+    padding: 1.5%;
+    bottom: 0;
+
+}
+
+.navbar a:nth-of-type(1){
+    float: left;
+    margin-left: 10%;
+    // font-size: 30px;
+}
+
+.navbar a:nth-of-type(2){
+    float: left;
+    margin-left: 22.5%;
+}
+
+.navbar a:nth-of-type(3){
+    float: right;
+    margin-right: 10%;
+}
+
+.Img-test{
+    width: 100px;
+}
+
+
+/**
+-------------------------------
+Annat          
+-------------------------------
+**/
+
+.title{
+    display: flex; 
+    justify-content: center; 
+    font-size: 45px; 
+    font-weight: bold; 
+    margin: 0;
+}
+
+.title p{
+/*    margin: 20px;*/
+    margin-bottom: 0;
+    margin-right: -66px;
+}
+
+/**
+-------------------------------
+            Låtar          
+-------------------------------
+**/
+
+.låtar-titel{
+    display: flex; 
+    justify-content: center;
+    font-size: 30px; 
+    font-weight: lighter;
+}
+
+.låtar {
+    margin: 4px, 4px;
+    padding: 4px;
+    /**background-color: #08c708;**/
+    width: 100%;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.låtar img{
+    border-radius: 20px;
+    margin-left: 0.7rem;
+}
+
+.text{
+    display: flex;
+}
+
+.text p{
+    margin-left: 1.7rem;
+    margin-right: 1.6rem;
+}
+
+
+/**
+-------------------------------
+           Artister          
+-------------------------------
+**/
+
+.artister-titel{
+    display: flex; 
+    justify-content: center;
+    font-size: 30px; 
+    font-weight: lighter;
+}
+
+.Artister {
+    margin: 4px, 4px;
+    padding: 4px;
+    /**background-color: #08c708;**/
+    width: 100%;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.Artister img{
+    border-radius: 100px;
+    margin-left: 0.7rem;
+}
+
+.text1{
+    display: flex;
+}
+
+.text1 p{
+    margin-left: 2.2rem;
+    margin-right: 2.5rem;
+}
+
+/**
+-------------------------------
+           Album          
+-------------------------------
+**/
+
+
+
+.album-titel{
+    display: flex; 
+    justify-content: center;
+    font-size: 30px; 
+    font-weight: lighter;
+}
+
+.Album{
+    margin: 4px, 4px;
+    padding: 4px;
+    /**background-color: #08c708;**/
+    width: 100%;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.Album img{
+    margin-left: 0.7rem;
+}
+
+.text2{
+    display: flex;
+}
+
+.text2 p{
+    margin-left: 2.2rem;
+    margin-right: 2.2rem;
+    margin-bottom: 5rem;
+}

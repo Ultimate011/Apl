@@ -1,0 +1,85 @@
+*{
+    margin: 0; 
+    padding: 0;
+}
+
+ion-content{
+    --background: var(--ion-color-orang-gradient);
+}
+
+p{
+    color: white;
+}
+
+
+/**
+-------------------------------
+            Navbar          
+-------------------------------
+**/
+
+.navbar svg{
+    margin-bottom: 3px;
+    margin-top: -500px; 
+    padding-top: -100px;
+    // box-shadow: 3px 3px 3px 3px rgba(255, 255, 255, 0.2);
+    // box-shadow: 6px 3px 3px rgba(255, 255, 255, 0.4);
+    box-shadow: 8px 4px 4px rgba(255, 255, 255, 1); 
+    // border: 1px; 
+    // border-style: solid; 
+}
+
+.navbar{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(249,182,106,1) 0%, rgba(201,100,26,1) 100%, rgba(201,100,26,1) 100%);
+    // padding-top: 2%;
+    // border: 1px;
+    // border-style: solid hidden hidden hidden;
+    // border-color: white;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+    // border: 1px;
+    // border-style: solid;
+    // background-color: darkgrey;
+    padding: 1.5%;
+    bottom: 0;
+
+}
+
+.navbar a:nth-of-type(1){
+    float: left;
+    margin-left: 10%;
+    // font-size: 30px;
+}
+
+.navbar a:nth-of-type(2){
+    float: left;
+    margin-left: 22.5%;
+}
+
+.navbar a:nth-of-type(3){
+    float: right;
+    margin-right: 10%;
+}
+
+.example2 {
+    border: 1px solid;
+    padding: 10px;
+    // box-shadow: 4px 4px 4px 4px rgba(255, 255, 255, 0.2);
+    box-shadow: 4px 4px 4px rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    width: 50%;
+    margin: 20px;
+  }
+
+    // .Line-test{
+        // border: 1px; 
+        // border-style: solid; 
+        // box-shadow: 5px 5px 5px 5px rgba(255, 255, 255, 0.2)
+    // }

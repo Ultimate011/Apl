@@ -1,0 +1,421 @@
+ion-content{
+    --background: var(--ion-color-orang-gradient);
+}
+
+.navbar svg{
+    margin-bottom: 3px;
+    margin-top: -500px; 
+    // padding-top: -100px;
+    // box-shadow: 3px 3px 3px 3px rgba(255, 255, 255, 0.2);
+    // box-shadow: 6px 3px 3px rgba(255, 255, 255, 0.4);
+    // border: 1px; 
+    // border-style: solid; 
+}
+
+.navbar{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(249,182,106,1) 0%, rgba(201,100,26,1) 100%, rgba(201,100,26,1) 100%);
+    // padding-top: 2%;
+    // border: 1px;
+    // border-style: solid hidden hidden hidden;
+    // border-color: white;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+    // border: 1px;
+    // border-style: solid;
+    // background-color: darkgrey;
+    padding: 1.5%;
+    bottom: 0;
+
+}
+
+.navbar a:nth-of-type(1){
+    float: left;
+    margin-left: 10%;
+    // font-size: 30px;
+}
+
+.navbar a:nth-of-type(2){
+    float: left;
+    margin-left: 22.5%;
+}
+
+.navbar a:nth-of-type(3){
+    float: right;
+    margin-right: 10%;
+}
+
+.settings{
+    float: right;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    font-size: 34px; 
+    color: white;
+}
+
+/**.page-title{
+    background-color: red; 
+}**/
+
+.title{
+    color: white;
+    font-size: 25px;
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-top: 4.5rem;
+}
+
+.first{
+    border: 10px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: white;
+    width: 42%;
+    height: 78px;
+    font-size: 19px;
+    background: white;
+    float: left;
+    margin-left: 1.5rem;
+}
+
+.first img{
+    width: 60px;
+    // height: 60px;
+}
+
+.second{
+    border: 10px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: white;
+    width: 42%;
+    height: 78px;
+    font-size: 19px;
+    background: white;
+    float: right;
+    margin-right: 1.5rem;
+}
+
+.second img{
+    width: 60px;
+}
+
+.third{
+    border: 10px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: white;
+    width: 42%;
+    height: 78px;
+    font-size: 19px;
+    background: white;
+    float: left; 
+    margin-left: 1.5rem;
+    margin-top: 30px;
+}
+
+.third img{
+    width: 60px;
+}
+
+.fourth{
+    border: 10px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: white;
+    width: 42%;
+    height: 78px;
+    font-size: 19px;
+    background: white;
+    float: right;
+    margin-right: 1.5rem;
+    margin-top: 30px;
+}
+
+.fourth img{
+    width: 60px;
+}
+
+
+p{
+    margin-top: 5px; 
+    margin-bottom: 0;
+}
+
+.testitems{
+    width: 100%;
+    height: 22%;
+}
+
+.testitems p{
+    margin-left: 4.5rem;
+}
+
+img:nth-of-type(1){
+    float: left;
+}
+
+/**.genres{
+background-color: white;
+}**/
+
+.genres-title{
+    color: white; 
+    font-size: 30px; 
+    display: flex; 
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+// .genres-title img{
+//     margin-left: 1rem;
+// }
+
+.icon-arrow{
+    margin-left: 1rem;
+    margin-top: 10px;
+}
+
+
+.genres p:nth-of-type(1){
+    border: 1px;
+    border-style: hidden;
+    border-radius: 10px;
+
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../../assets/shapes.svg);
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: 400px 200px;
+
+    width: 86%;
+    height: 125px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    
+    color: white;
+    font-size: 35px; 
+    margin-left: 7%; 
+    margin-right: 7%;
+    margin-bottom: 1rem;
+    }
+
+.genres p:nth-of-type(2){
+    border: 1px;
+    border-style: hidden;
+    border-radius: 10px;
+    
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Jazz.jpg);
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: 400px 200px;
+
+    width: 86%;
+    height: 125px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    
+    color: white;
+    font-size: 35px;
+    margin-left: 7%; 
+    margin-right: 7%;
+    margin-bottom: 1rem;
+
+}
+
+.genres p:nth-of-type(3){
+    border: 1px;
+    border-style: hidden;
+    border-radius: 10px;
+
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Rock.jpg);
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: 400px 200px;
+    
+    width: 86%;
+    height: 125px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    
+    color: white;
+    font-size: 35px;
+    margin-left: 7%; 
+    margin-right: 7%;
+    margin-bottom: 1rem;
+    
+}
+
+.genres p:nth-of-type(4){
+    border: 1px;
+    border-style: hidden;
+    border-radius: 10px;
+
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Pop.jpg);
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: 400px 200px;
+    
+    width: 86%;
+    height: 125px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    
+    color: white;
+    font-size: 35px;
+    margin-left: 7%; 
+    margin-right: 7%;
+    margin-bottom: 1rem;
+    
+    
+}
+
+.genres p:nth-of-type(5){
+    border: 1px;
+    border-style: hidden;
+    border-radius: 10px;
+
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Rap.png);
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: 400px 250px;
+
+    width: 86%;
+    height: 125px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+
+    color: white;
+    font-size: 35px;
+    margin-left: 7%; 
+    margin-right: 7%;
+    margin-bottom: 1rem;
+}
+
+.genres p:nth-of-type(6){
+    border: 1px;
+    border-style: hidden;
+    border-radius: 10px;
+
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Indie.jpg);
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: 400px 200px;
+
+    width: 86%;
+    height: 125px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+
+    color: white;
+    font-size: 35px;
+    margin-left: 7%; 
+    margin-right: 7%;
+    margin-bottom: 1rem;
+}
+
+.genres p:nth-of-type(7){
+    border: 1px;
+    border-style: hidden;
+    border-radius: 10px;
+
+    /**background-image: url(http://unsplash.it/206);**/
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Country.jpg);
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: 400px 200px;
+
+    width: 86%;
+    height: 125px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+
+    color: white;
+    font-size: 35px;
+    margin-left: 7%; 
+    margin-right: 7%;
+    margin-bottom: 1rem;
+}
+
+.genres p:nth-of-type(8){
+    border: 1px;
+    border-style: hidden;
+    border-radius: 10px;
+
+    /**background-image: url(ClassicalMusic.jpg);**/
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(ClassicalMusic.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 400px 200px;
+
+    width: 86%;
+    height: 125px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+
+    color: white;
+    font-size: 35px;
+    margin-left: 7%; 
+    margin-right: 7%;
+    margin-bottom: 1rem;
+    
+}
+
+.genres p:nth-of-type(9){
+    border: 1px;
+    border-style: hidden;
+    border-radius: 10px;
+
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Blues.jpg);
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: 400px 200px;
+
+    width: 86%;
+    height: 125px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+
+    color: white;
+    font-size: 35px;
+    margin-left: 7%; 
+    margin-right: 7%;
+    margin-bottom: 1rem;
+}
+
+.genres p:nth-of-type(10){
+    border: 1px;
+    border-style: hidden;
+    border-radius: 10px;
+
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Electronic.png);
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: 400px 200px;
+    
+    width: 86%;
+    height: 125px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    
+    color: white;
+    font-size: 35px;
+    margin-left: 7%; 
+    margin-right: 7%;
+    margin-bottom: 3rem;
+}

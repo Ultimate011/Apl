@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ion-content{
+    --background: var(--ion-color-orang-gradient);
+}
+
+p{
+    color: white;
+}
+
+.settings{
+    float: right;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    font-size: 34px; 
+    color: white;
+}
+
+
+/**
+-------------------------------
+            Navbar          
+-------------------------------
+**/
+
+.navbar svg{
+    margin-bottom: 3px;
+    margin-top: -500px; 
+    // padding-top: -100px;
+    // box-shadow: 3px 3px 3px 3px rgba(255, 255, 255, 0.2);
+    // box-shadow: 6px 3px 3px rgba(255, 255, 255, 0.4);
+    // border: 1px; 
+    // border-style: solid; 
+}
+
+.navbar{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(249,182,106,1) 0%, rgba(201,100,26,1) 100%, rgba(201,100,26,1) 100%);
+    // padding-top: 2%;
+    // border: 1px;
+    // border-style: solid hidden hidden hidden;
+    // border-color: white;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+    // border: 1px;
+    // border-style: solid;
+    // background-color: darkgrey;
+    padding: 1.5%;
+    bottom: 0;
+
+}
+
+.navbar a:nth-of-type(1){
+    float: left;
+    margin-left: 10%;
+    // font-size: 30px;
+}
+
+.navbar a:nth-of-type(2){
+    float: left;
+    margin-left: 22.5%;
+}
+
+.navbar a:nth-of-type(3){
+    float: right;
+    margin-right: 10%;
+}
+
+/**
+-------------------------------
+            Annat          
+-------------------------------
+**/
+
+
+
+
+/**
+-------------------------------
+           Top part          
+-------------------------------
+**/
+
+// .title{
+//     display: flex; 
+//     justify-content: center;   
+// }
+
+
+
+.title{
+    display: flex; 
+    justify-content: center;
+    width: 100%; 
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.title p{
+    font-size: 35px; 
+    font-weight: bold; 
+}
+
+.subtitle{
+    display: flex; 
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+    
+    .subtitle p{
+    font-size: 30px; 
+    font-weight: lighter;
+}
+
+.playlist{
+    display: flex; 
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.playlist img{
+    border-radius: 50px;
+}
+
+.container{
+    display: flex; 
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.playlist-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36%; 
+    border: 3px; 
+    border-style: solid; 
+    border-radius: 75px;
+    height: 60px;
+    background: #F7B367;
+    color: white;
+}
+
+.playlist-button p{ 
+    font-size: 20px;
+    padding-top: 12px; 
+    padding-bottom: 12px;
+    border-width: 36%;
+}
+
+
+
+/**
+-------------------------------
+           Content          
+-------------------------------
+**/
+
+.playlist-song{
+border: none;
+// background-color: red;
+}
+
+.icon-play{
+    font-size: 30px;
+    color: white;
+    border: 2px;
+    border-style: solid;
+    border-radius: 100%;
+    padding-left: 4px;
+    padding-top: 2px; 
+    padding-bottom: 2px;
+}
+
+.icon-heart{
+    font-size: 30px;
+    color: white;
+}
+
+.playlist-item{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    // background-color: yellow;     
+}
+
+.playlist-item img:nth-of-type(2){
+    float: right;
+}
+
+
+/**
+-------------------------------
+            Annat          
+-------------------------------
+**/

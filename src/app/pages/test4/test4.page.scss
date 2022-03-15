@@ -1,0 +1,301 @@
+*{
+    margin: 0; 
+    padding: 0;
+}
+
+ion-content{
+    --background: var(--ion-color-orang-gradient);
+}
+
+p{
+    color: white;
+}
+
+.settings{
+    float: left;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    font-size: 34px; 
+    color: white;
+}
+
+/**
+-------------------------------
+            Navbar          
+-------------------------------
+**/
+
+.navbar svg{
+    margin-bottom: 3px;
+    margin-top: -500px; 
+    // padding-top: -100px;
+    // box-shadow: 3px 3px 3px 3px rgba(255, 255, 255, 0.2);
+    // box-shadow: 6px 3px 3px rgba(255, 255, 255, 0.4);
+    // border: 1px; 
+    // border-style: solid; 
+}
+
+.navbar{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(249,182,106,1) 0%, rgba(201,100,26,1) 100%, rgba(201,100,26,1) 100%);
+    // padding-top: 2%;
+    // border: 1px;
+    // border-style: solid hidden hidden hidden;
+    // border-color: white;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+    // border: 1px;
+    // border-style: solid;
+    // background-color: darkgrey;
+    padding: 1.5%;
+    bottom: 0;
+
+}
+
+.navbar a:nth-of-type(1){
+    float: left;
+    margin-left: 10%;
+    // font-size: 30px;
+}
+
+.navbar a:nth-of-type(2){
+    float: left;
+    margin-left: 22.5%;
+}
+
+.navbar a:nth-of-type(3){
+    float: right;
+    margin-right: 10%;
+}
+
+/**
+-------------------------------
+            Annat          
+-------------------------------
+**/
+
+
+.title{
+    font-size: 40px; 
+    font-weight: bold;
+    display: flex; 
+    justify-content: center;
+    margin: 20px;
+    margin-bottom: 60px;
+    margin-top: 40px; 
+}
+
+// .settings{}
+
+
+/**
+-------------------------------
+           Themes          
+-------------------------------
+**/
+
+
+.setting1{
+    // background-color: yellow;
+    border: 1px;
+    border-style: hidden hidden solid hidden;
+    color: white;
+    width: 80%;
+    margin-left: 10%;
+    height: 34px;
+}
+
+.setting1 p{
+    font-size: 10px;
+    // background-color: red;
+    width: 150px; 
+    font-size: 30px;
+}
+
+.setting1 img{
+    float: right;
+    margin-bottom: 10px; 
+}
+
+.themes{
+    // background-color: green;
+    display: flex;
+}
+
+.theme1{
+    border: 1px; 
+    border-style: solid; 
+    border-radius: 100%; 
+    color: #575757;
+    background-color: #DB8338; 
+    width: 37px;
+    height: 37px;
+    margin-top: 10px; 
+}
+
+.theme2{
+    border: 1px; 
+    border-style: solid; 
+    border-radius: 100%;
+    color: #575757;  
+    background-image: linear-gradient(to bottom, #28292D, #08E6F6); 
+    width: 37px;
+    height: 37px;
+    margin-top: 10px; 
+    margin-left: 10px;
+}
+
+.theme3{
+    border: 1px; 
+    border-style: solid; 
+    border-radius: 100%;
+    color: #575757; 
+    background-image: linear-gradient(to right, #21002D, #76018A);
+    width: 37px;
+    height: 37px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+
+/**
+-------------------------------
+             Rate          
+-------------------------------
+**/
+
+
+.setting2{
+    // background-color: yellow;
+    border: 1px;
+    border-style: hidden hidden solid hidden;
+    color: white;
+    width: 80%;
+    margin-left: 10%;
+    height: 34px;
+    margin-top: 75px;
+}
+
+.setting2 p{
+    font-size: 10px;
+    // background-color: red;
+    width: 200px; 
+    font-size: 30px;
+}
+
+.setting2 img{
+    float: right;
+    margin-bottom: 10px; 
+}
+
+
+/**
+-------------------------------
+            About          
+-------------------------------
+**/
+
+
+.setting3{
+    // background-color: yellow;
+    border: 1px;
+    border-style: hidden hidden solid hidden;
+    color: white;
+    width: 80%;
+    margin-left: 10%;
+    height: 34px;
+    margin-top: 10%;
+}
+
+.setting3 p{
+    font-size: 10px;
+    // background-color: red;
+    width: 200px; 
+    font-size: 30px;
+}
+
+.setting3 img{
+    float: right;
+    margin-bottom: 10px; 
+}
+
+
+/**
+-------------------------------
+           Support          
+-------------------------------
+**/
+
+
+.setting4{
+    // background-color: yellow;
+    border: 1px;
+    border-style: hidden hidden solid hidden;
+    color: white;
+    width: 80%;
+    margin-left: 10%;
+    height: 34px;
+    margin-top: 75px;
+}
+
+.setting4 p{
+    font-size: 10px;
+    // background-color: red;
+    width: 200px; 
+    font-size: 30px;
+}
+
+// .setting4 img{
+//     float: right;
+//     margin-bottom: 10px; 
+// }
+
+.icon-arrow{
+    float: right; 
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+
+/**
+-------------------------------
+           Donate          
+-------------------------------
+**/
+
+
+.settings-donate{
+    margin-top: 50px;
+    width: 100%; 
+    display: flex; 
+    justify-content: center;
+}
+
+.donate{
+    border: none;
+    margin: 20px;
+}
+
+
+
+.donate a{
+    border: 2px; 
+    border-style: solid; 
+    border-radius: 40px;
+    border-color: white;
+    color: white;
+    background-color: #E59348;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 20px; 
+    padding: 20px;
+    padding-left: 30px; 
+    padding-right: 30px;
+}

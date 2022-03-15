@@ -1,0 +1,222 @@
+
+ion-content{
+    --background: var(--ion-color-orang-gradient);
+}
+
+p{
+    color: white;
+}
+
+.settings{
+    float: right;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    font-size: 34px; 
+    color: white;
+}
+
+
+
+/**
+-------------------------------
+            Navbar          
+-------------------------------
+**/
+
+.navbar svg{
+    margin-bottom: 3px;
+    margin-top: -500px; 
+    // padding-top: -100px;
+    // box-shadow: 3px 3px 3px 3px rgba(255, 255, 255, 0.2);
+    // box-shadow: 6px 3px 3px rgba(255, 255, 255, 0.4);
+    // border: 1px; 
+    // border-style: solid; 
+}
+
+.navbar{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(249,182,106,1) 0%, rgba(201,100,26,1) 100%, rgba(201,100,26,1) 100%);
+    // padding-top: 2%;
+    // border: 1px;
+    // border-style: solid hidden hidden hidden;
+    // border-color: white;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+    // border: 1px;
+    // border-style: solid;
+    // background-color: darkgrey;
+    padding: 1.5%;
+    bottom: 0;
+
+}
+
+.navbar a:nth-of-type(1){
+    float: left;
+    margin-left: 10%;
+    // font-size: 30px;
+}
+
+.navbar a:nth-of-type(2){
+    float: left;
+    margin-left: 22.5%;
+}
+
+.navbar a:nth-of-type(3){
+    float: right;
+    margin-right: 10%;
+}
+
+/**
+-------------------------------
+           Titles          
+-------------------------------
+**/
+
+.title{
+    font-size: 45px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+    
+.title p{
+    margin-right: -66px;
+}
+
+.items-title{
+    font-size: 25px;
+    font-weight: lighter;
+    display: flex;
+    justify-content: center;
+}
+    
+.items-featured-title{
+    font-size: 25px; 
+    font-weight: lighter;
+    display: flex;
+    justify-content: center;
+}
+
+.items-top-title{
+    font-size: 25px; 
+    font-weight: lighter;
+    display: flex;
+    justify-content: center;
+}
+
+/**
+-------------------------------
+            Items          
+-------------------------------
+**/
+
+.items{
+    /*background-color: yellow;*/
+    display: flex;
+    justify-content: center;
+}
+
+.items {
+    margin: 4px, 4px;
+    padding: 4px;
+    /**background-color: #08c708;**/
+    width: 100%;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.items img{
+    border-radius: 20px;
+    margin-left: 0.7rem;
+}
+
+.items img:nth-of-type(1){
+    border-radius: 10px;
+    // margin-left: 2%; 
+    // margin-right: 2%;
+}
+
+
+.items-featured-img {
+    background-color: red;
+    width: 100%;
+}
+
+.items-featured-img img{
+    border-radius: 100px;
+}
+
+.items-featured-img img:nth-of-type(1){
+    float: left;
+    margin-left: 5%;
+    width: 100px;
+}
+
+.items-featured-img img:nth-of-type(2){
+    float: left;
+    margin-left: 12.5%;
+    width: 100px;
+}
+
+.items-featured-img img:nth-of-type(3){
+    float: right;
+    margin-right: 5%;
+    width: 100px;
+}
+
+.items-featured-p{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+/**.items-featured-p p:nth-of-type(1){
+    
+}**/
+
+.items-featured-p p:nth-of-type(2){
+    margin-left: 7.5rem;
+    margin-right: 7.5rem;
+}
+
+/**.items-featured-p p:nth-of-type(3){
+    
+}**/
+
+/** .items-featured-p p:nth-of-type(1){
+    float: left;
+    margin-left: 5%;
+}
+
+.items-featured-p p:nth-of-type(2){
+    float: left; 
+    margin-left: 5%;
+}
+
+.items-featured-p p:nth-of-type(3){
+    float: right;
+    margin-left: 5%;
+} **/
+
+
+.items-top img{
+    border-radius: 10px;
+    padding-bottom: 4.5rem;
+}
+
+
+.items-top img:nth-of-type(1){
+    float: left;
+    margin-left: 3rem;
+}
+
+.items-top img:nth-of-type(2){
+    float: right;
+    margin-right: 3rem;
+}
