@@ -61,27 +61,49 @@ Other
 }
 
 
-
-
-
-
-
 /**
 -------------------------------
             Navbar          
 -------------------------------
 **/
 
-.navbar svg{
-    margin-bottom: 3px;
-    margin-top: -500px;
-    width: 100%; 
+
+.s-solider{
+    // width: 400px;
+    width: 100%;
+    position: absolute;
+    top: -5px;
+    margin-right: 14px;
+    margin-left: 25px;
+}
+
+
+.seek-bar {
+    -webkit-appearance: none;
+    // width: 360px;
+    // width: 90%;
+    width: 86.9%;
+    height: 2.5px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    overflow: hidden;
+    margin-left: 2px;
+    box-shadow: 1px 10px 30px 1px white;
+    
+}  
+
+//.navbar svg{
+    //margin-bottom: 3px;
+    //margin-top: -500px;
+    //width: 100%; 
     // padding-top: -100px;
     // box-shadow: 3px 3px 3px 3px rgba(255, 255, 255, 0.2);
     // box-shadow: 6px 3px 3px rgba(255, 255, 255, 0.4);
     // border: 1px; 
     // border-style: solid; 
-}
+
+
 
 .navbar{
     position: fixed;
@@ -120,6 +142,7 @@ Other
     float: right;
     margin-right: 10%;
 }
+
 
 /**
 -------------------------------

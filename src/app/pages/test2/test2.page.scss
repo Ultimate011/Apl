@@ -51,7 +51,8 @@ p{
 
 
 .s-solider{
-    width: 400px;
+    // width: 400px;
+    width: 100%;
     position: absolute;
     top: -5px;
     margin-right: 14px;
@@ -61,7 +62,9 @@ p{
 
 .seek-bar {
     -webkit-appearance: none;
-    width: 360px;
+    // width: 360px;
+    // width: 90%;
+    width: 86.9%;
     height: 2.5px;
     border-radius: 10px;
     background: rgba(255, 255, 255, 0.5);
