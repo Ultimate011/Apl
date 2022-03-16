@@ -3,6 +3,46 @@
     padding: 0;
 }
 
+/**
+-------------------------------
+Themes
+-------------------------------
+**/
+
+ion-content{
+    // --background: var(--ion-color-orang-gradient);
+    // --background: var(--ion-color-blue-gradient); 
+    --background: var(--ion-color-purple-gradient);
+}
+
+.navbar{
+    // background: linear-gradient(90deg, rgba(249,182,106,1) 0%, rgba(201,100,26,1) 100%, rgba(201,100,26,1) 100%);
+    // --background: var(--ion-color-orang-gradient);    
+    // --background: var(--ion-color-blue-gradient);
+    --background: var(--ion-color-purple-gradient);
+}
+
+p{
+    color: white;
+}
+
+.playlist-button{
+    // background: #F7B367;
+    // border-color: #FFFFFF; 
+    // background: #2D2F33; 
+    // border-color: #FFFFFF; 
+    background: #6A007D; 
+    border-color: #FEB9FD; 
+}
+
+
+/**
+-------------------------------
+Other
+-------------------------------
+**/
+
+
 @font-face { 
     src: url(../../../assets/TCM_____.TTF); 
     font-family: Tw Cen MT;
@@ -10,21 +50,21 @@
     font-family: segoe UI;
 }
 
-ion-content{
-    --background: var(--ion-color-orang-gradient);
-}
 
-p{
-    color: white;
-}
 
 .settings{
-    float: right;
-    margin-top: 1rem;
-    margin-right: 1rem;
+    float: left;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
     font-size: 34px; 
     color: white;
 }
+
+
+
+
+
+
 
 /**
 -------------------------------
@@ -47,7 +87,6 @@ p{
     position: fixed;
     bottom: 0;
     width: 100%;
-    background: linear-gradient(90deg, rgba(249,182,106,1) 0%, rgba(201,100,26,1) 100%, rgba(201,100,26,1) 100%);
     // padding-top: 2%;
     // border: 1px;
     // border-style: solid hidden hidden hidden;
@@ -129,8 +168,9 @@ p{
 }
     
     .subtitle p{
-    font-size: 30px; 
+    font-size: 20px; 
     font-weight: lighter;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
 }
 
 .playlist{
@@ -160,16 +200,16 @@ p{
     border: 3px; 
     border-style: solid; 
     border-radius: 75px;
-    height: 60px;
-    background: #F7B367;
+    height: 50px;
     color: white;
 }
 
 .playlist-button p{ 
     font-size: 20px;
-    padding-top: 12px; 
-    padding-bottom: 12px;
+    // padding-top: 1px; 
+    // padding-bottom: 1px;
     border-width: 36%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
@@ -261,7 +301,7 @@ margin-top: 3%;
 
 .scroll{
     width: 100%;
-    height: 37.7%;
+    height: 37%;
     overflow: auto;
     white-space: nowrap;
 }

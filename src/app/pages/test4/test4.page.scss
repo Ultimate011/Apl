@@ -3,20 +3,51 @@
     padding: 0;
 }
 
-@font-face { 
-    src: url(../../../assets/TCM_____.TTF); 
-    font-family: Tw Cen MT;
-    src: url(../../../assets/seguisb.ttf);
-    font-family: segoe UI;
-}
+
+/**
+-------------------------------
+Themes
+-------------------------------
+**/ 
+    
 
 ion-content{
     --background: var(--ion-color-orang-gradient);
+    // --background: var(--ion-color-blue-gradient);
+    // --background: var(--ion-color-purple-gradient); 
+}
+
+.navbar{
+    background: linear-gradient(90deg, rgba(249,182,106,1) 0%, rgba(201,100,26,1) 100%, rgba(201,100,26,1) 100%);
+    // background: linear-gradient(90deg, rgba(61, 66, 72 ,1) 0%, rgba(37, 37, 41 ,1) 100%, rgba(37, 37, 41 ,1) 100%);
+    // background: linear-gradient(90deg, rgba(91, 0, 106, 1) 0%, rgba(30, 0, 42, 1) 100%, rgba(30, 0, 42, 1) 100%);
 }
 
 p{
     color: white;
 }
+
+.donate a{
+    background-color: #E59348;
+    // background-color: #2E3035; 
+    // background-color: #6A007D;
+
+}
+
+
+/**
+-------------------------------
+Other
+-------------------------------
+**/
+
+    @font-face { 
+        src: url(../../../assets/TCM_____.TTF); 
+    font-family: Tw Cen MT;
+    src: url(../../../assets/seguisb.ttf);
+    font-family: segoe UI;
+}
+
 
 .settings{
     float: left;
@@ -47,7 +78,6 @@ p{
     position: fixed;
     bottom: 0;
     width: 100%;
-    background: linear-gradient(90deg, rgba(249,182,106,1) 0%, rgba(201,100,26,1) 100%, rgba(201,100,26,1) 100%);
     // padding-top: 2%;
     // border: 1px;
     // border-style: solid hidden hidden hidden;
@@ -295,11 +325,10 @@ p{
 
 .donate a{
     border: 2px; 
-    border-style: solid; 
-    border-radius: 40px;
     border-color: white;
     color: white;
-    background-color: #E59348;
+    border-style: solid; 
+    border-radius: 40px;
     text-decoration: none;
     font-size: 25px;
     font-weight: bold;

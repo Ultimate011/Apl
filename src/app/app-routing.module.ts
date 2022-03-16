@@ -33,7 +33,11 @@ const routes: Routes = [
   {
     path: 'line-test',
     loadChildren: () => import('./pages/line-test/line-test.module').then( m => m.LineTestPageModule)
+  },  {
+    path: 'test5',
+    loadChildren: () => import('./pages/test5/test5.module').then( m => m.Test5PageModule)
   }
+
 ];
 @NgModule({
   imports: [

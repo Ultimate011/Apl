@@ -1,6 +1,99 @@
+
+/**
+-------------------------------
+Themes
+-------------------------------
+**/
+
+
 ion-content{
     --background: var(--ion-color-orang-gradient);
+    // --background: var(--ion-color-blue-gradient);
+    // --background: var(--ion-color-purple-gradient);
 }
+
+.navbar{
+    background: linear-gradient(90deg, rgba(249,182,106,1) 0%, rgba(201,100,26,1) 100%, rgba(201,100,26,1) 100%);
+    // background: linear-gradient(90deg, rgba(61, 66, 72 ,1) 0%, rgba(37, 37, 41 ,1) 100%, rgba(37, 37, 41 ,1) 100%);
+    // background: linear-gradient(90deg, rgba(91, 0, 106, 1) 0%, rgba(30, 0, 42, 1) 100%, rgba(30, 0, 42, 1) 100%);
+    // --background: var(--ion-color-orang-gradient);
+    // --background: var(--ion-color-blue-gradient);
+    // --background: var(--ion-color-purple-gradient);
+}
+
+.p{
+    color: white;
+}
+
+.first{
+    border: 10px;
+    border-color: white;
+    background: white;
+    color: black;
+    // background: #484747;
+    // border-color: #484747; 
+    // box-shadow: 4px 4px 4px rgba(8, 230, 246, 0.9);
+    // color: white; 
+    // background: rgba(72, 71, 71, 0.4);
+    // border-color: rgba(72, 71, 71, 0); 
+    // box-shadow: 4px 4px 4px rgba(254, 185, 253, 0.9);
+    // color: white; 
+
+}
+
+.second{
+    border: 10px;
+    border-color: white;
+    background: white;
+    color: black;
+    // background: #484747;
+    // border-color: #484747; 
+    // box-shadow: 4px 4px 4px rgba(8, 230, 246, 0.9);
+    // color: white; 
+    // background: rgba(72, 71, 71, 0.4);
+    // border-color: rgba(72, 71, 71, 0); 
+    // box-shadow: 4px 4px 4px rgba(254, 185, 253, 0.9);
+    // color: white; 
+
+}
+
+.third{
+    border: 10px;
+    border-color: white;
+    background: white;
+    color: black;
+    // background: #484747;
+    // border-color: #484747; 
+    // box-shadow: 4px 4px 4px rgba(8, 230, 246, 0.9);
+    // color: white; 
+    // background: rgba(72, 71, 71, 0.4);
+    // border-color: rgba(72, 71, 71, 0); 
+    // box-shadow: 4px 4px 4px rgba(254, 185, 253, 0.9);
+    // color: white; 
+}
+
+.fourth{
+    border: 10px;
+    border-color: white;
+    background: white;
+    color: black;
+    // background: #484747;
+    // border-color: #484747; 
+    // box-shadow: 4px 4px 4px rgba(8, 230, 246, 0.9);
+    // color: white; 
+    // background: rgba(72, 71, 71, 0.4);
+    // border-color: rgba(72, 71, 71, 0); 
+    // box-shadow: 4px 4px 4px rgba(254, 185, 253, 0.9);
+    // color: white; 
+}
+
+
+
+/**
+-------------------------------
+Other
+-------------------------------
+**/
 
 @font-face { 
     src: url(../../../assets/TCM_____.TTF); 
@@ -24,7 +117,6 @@ ion-content{
     position: fixed;
     bottom: 0;
     width: 100%;
-    background: linear-gradient(90deg, rgba(249,182,106,1) 0%, rgba(201,100,26,1) 100%, rgba(201,100,26,1) 100%);
     // padding-top: 2%;
     // border: 1px;
     // border-style: solid hidden hidden hidden;
@@ -79,16 +171,12 @@ ion-content{
     margin-top: 4.5rem;
     font-family: Tw Cen MT;
 }
-
 .first{
-    border: 10px;
     border-radius: 10px;
     border-style: solid;
-    border-color: white;
     width: 42%;
     height: 78px;
     font-size: 19px;
-    background: white;
     float: left;
     margin-left: 1.5rem;
 }
@@ -98,15 +186,12 @@ ion-content{
     // height: 60px;
 }
 
-.second{
-    border: 10px;
+    .second{
     border-radius: 10px;
     border-style: solid;
-    border-color: white;
     width: 42%;
     height: 78px;
     font-size: 19px;
-    background: white;
     float: right;
     margin-right: 1.5rem;
 }
@@ -116,14 +201,11 @@ ion-content{
 }
 
 .third{
-    border: 10px;
     border-radius: 10px;
     border-style: solid;
-    border-color: white;
     width: 42%;
     height: 78px;
     font-size: 19px;
-    background: white;
     float: left; 
     margin-left: 1.5rem;
     margin-top: 30px;
@@ -134,14 +216,11 @@ ion-content{
 }
 
 .fourth{
-    border: 10px;
     border-radius: 10px;
     border-style: solid;
-    border-color: white;
     width: 42%;
     height: 78px;
     font-size: 19px;
-    background: white;
     float: right;
     margin-right: 1.5rem;
     margin-top: 30px;
