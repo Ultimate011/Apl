@@ -34,16 +34,39 @@ p{
 -------------------------------
 **/
 
-.navbar svg{
-    margin-bottom: 3px;
-    margin-top: -500px;
-    width: 100%; 
+
+.s-solider{
+    width: 400px;
+    position: absolute;
+    top: -5px;
+    margin-right: 14px;
+    margin-left: 25px;
+}
+
+
+.seek-bar {
+    -webkit-appearance: none;
+    width: 360px;
+    height: 2.5px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    overflow: hidden;
+    margin-left: 2px;
+    box-shadow: 1px 10px 30px 1px white;
+    
+}  
+
+//.navbar svg{
+    //margin-bottom: 3px;
+    //margin-top: -500px;
+    //width: 100%; 
     // padding-top: -100px;
     // box-shadow: 3px 3px 3px 3px rgba(255, 255, 255, 0.2);
     // box-shadow: 6px 3px 3px rgba(255, 255, 255, 0.4);
     // border: 1px; 
     // border-style: solid; 
-}
+
 
 .navbar{
     position: fixed;
@@ -175,6 +198,7 @@ Annat
     font-weight: lighter;
     font-family: segoe UI;
     margin-left: 20px;
+    text-align: center;
 
 }
 
@@ -202,8 +226,7 @@ Annat
 }
 
 .text1 p{
-    margin-left: 2.2rem;
-    margin-right: 2.5rem;
+    margin: 17px 1rem 1px 2.9rem;
 }
 
 /**
@@ -223,28 +246,41 @@ Annat
 
 .album-titel p{
     margin-bottom: 10px;
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 .Album{
-    margin: 4px, 4px;
+    //margin: 4px, 4px;
     padding: 4px;
     /**background-color: #08c708;**/
     width: 100%;
     overflow: auto;
     white-space: nowrap;
+    margin-top: 5px;
 }
 
 .Album img{
     margin-left: 0.7rem;
+
 }
+.img1{
+    display: flex;
+    flex-wrap: nowrap;
+     
+}
+
+
 
 .text2{
     display: flex;
 }
 
-.text2 p{
-    margin-left: 2.2rem;
-    margin-right: 2.2rem;
-    margin-bottom: 5rem;
+.img1 p{
+    margin: 2px 3px 3px 2px;
+    font-family: segoe UI;
+    color: #0B0B45;
+    position: absolute;
+    bottom: 100px;
 }
+
+ 
