@@ -1,51 +1,81 @@
-ion-content, ion-list, ion-item{
-    --background: var(--ion-color-dark); 
-    --ion-background-color: var(--ion-color-dark); 
+// ion-content, ion-list, ion-item{
+//     --background: var(--ion-color-dark); 
+//     --ion-background-color: var(--ion-color-dark); 
+// }
+
+// .disk{
+//     position: relative; 
+//     display: block; 
+//     margin: 40px auto; 
+//     width: 480px; 
+//     height: 480px; 
+//     border-radius: 50%;
+//     background-image: url("http://unsplash.it/480");
+//     background-size: cover;
+//     box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.08);
+//     animation: rotate 20s linear infinite;
+//     animation-play-state: paused;
+// }
+
+// .disk.play{
+//     animation-play-state: running; 
+// }
+
+// .disk::before{
+//     content: '';
+//     position: absolute; 
+//     top: 50%;
+//     left: 50%; 
+//     transform: translate(-50%, -50%);
+//     width: 100px; 
+//     height: 100px; 
+//     border-radius: 50%; 
+//     background: #000;
+// }
+
+
+// @keyframes rotate{
+//     0%{
+//         transform: rotate(0); 
+//     }
+
+//     100%{
+//         transform: rotate(360deg); 
+//     }
+// }
+
+// .play-btn{
+//     cursor: pointer; 
+
+// }
+
+/**
+----------------------
+Actual CSS
+----------------------
+**/
+
+ion-content{
+    --background: var(--ion-color-orang-gradient);
+    // --background: var(--ion-color-blue-gradient); 
+    // --background: var(--ion-color-purple-gradient);
 }
 
-.disk{
-    position: relative; 
-    display: block; 
-    margin: 40px auto; 
-    width: 480px; 
-    height: 480px; 
-    border-radius: 50%;
-    background-image: url("http://unsplash.it/480");
-    background-size: cover;
-    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.08);
-    animation: rotate 20s linear infinite;
-    animation-play-state: paused;
+ion-item{
+    --background: var(--ion-color-orang-gradient);
 }
 
-.disk.play{
-    animation-play-state: running; 
+.icon-play{
+    color: white;
 }
 
-.disk::before{
-    content: '';
-    position: absolute; 
-    top: 50%;
-    left: 50%; 
-    transform: translate(-50%, -50%);
-    width: 100px; 
-    height: 100px; 
-    border-radius: 50%; 
-    background: #000;
+.icon-heart{
+    color: white;
 }
 
-
-@keyframes rotate{
-    0%{
-        transform: rotate(0); 
-    }
-
-    100%{
-        transform: rotate(360deg); 
-    }
+.Label{
+    // border: 10px; 
+    // border-style: solid; 
+    // border-color: black;
+    color: yellow;
 }
-
-.play-btn{
-    cursor: pointer; 
-
-}
-

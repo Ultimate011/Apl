@@ -8,17 +8,30 @@
 <ion-content>
   <ion-list>
     <ion-item button *ngFor="let track of playlist" (click)="start(track)">
-      <ion-label [color]="track == activeTrack ? 'success' : 'light' ">
+      <ion-icon name="play-outline" class="icon-play"></ion-icon>
+      <ion-label class="Label" [color]="track == activeTrack ? 'success' : 'light' ">
         {{ track.name }}
       </ion-label>
+      <ion-label class="artist" [color]="track == activeTrack ? 'success' : 'light' ">
+        {{ track.artist }}
+      </ion-label>
+      <ion-icon name="heart-outline" class="icon-heart"></ion-icon>
     </ion-item>
   </ion-list>
 
-  <div class="disk">
+  <!-- <p class="Label" *ngFor="let track of playlist" (click)="start(track)">
+    {{ track.name }}
+  </p>
+  <p class="artist" *ngFor="let track of playlist">
+    {{ track.artist }} 
+  </p> -->
 
-  </div>
 
-  <script type="text/javascript" src="../../../assets/Player-test.js"></script>
+  <!-- <div class="disk">
+
+  </div> -->
+
+  <!-- <script type="text/javascript" src="../../../assets/Player-test.js"></script> -->
 
 </ion-content>
 

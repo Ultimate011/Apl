@@ -7,6 +7,8 @@ import { createAnimation, Animation } from '@ionic/core';
 export interface Track {
   name: string; 
   path: string; 
+  artist: string; 
+  album: string; 
 }
 
 /*declare function playBtn(): void; */
@@ -21,15 +23,21 @@ export class PlayerTestPage implements OnInit {
   playlist: Track[] = [
     {
       name: 'A star in the ending theme', 
-      path: '../../../assets/A star in the Ending Theme.mp3'
+      path: '../../../assets/A star in the Ending Theme.mp3',
+      artist: 'Yasunori Nishiki',
+      album: 'Octopath Traveler',
     }, 
     {
       name: 'Conquest', 
-      path: '../../../assets/21. Conquest (Calm_Ablaze) (Fates Version) _【Fire Emblem Fates OST_ Map Themes Mixed】 【HQ 1080p】 (1).mp3'
+      path: '../../../assets/21. Conquest (Calm_Ablaze) (Fates Version) _【Fire Emblem Fates OST_ Map Themes Mixed】 【HQ 1080p】 (1).mp3',
+      artist: 'Rei Kondoh',
+      album: 'Fire Emblem Awakening',
     },
     {
       name: 'Dusk Falls', 
-      path: '../../../assets/5. Dusk Falls (Calm_Fire) _【Fire Emblem Fates OST_ Map Themes Mixed】 【HQ 1080p】.mp3'
+      path: '../../../assets/5. Dusk Falls (Calm_Fire) _【Fire Emblem Fates OST_ Map Themes Mixed】 【HQ 1080p】.mp3',
+      artist: 'Rei Kondoh',
+      album: 'Fire Emblem Fates',
     }
   ];
 
