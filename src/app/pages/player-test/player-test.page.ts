@@ -22,11 +22,17 @@ export interface Track {
 export class PlayerTestPage implements OnInit {
   playlist: Track[] = [
     {
-      name: 'A star in the ending theme', 
-      path: '../../../assets/A star in the Ending Theme.mp3',
+      name: 'Ending Theme', 
+      path: '../../../assets/Ending Theme  Octopath Traveler OST.mp3',
       artist: 'Yasunori Nishiki',
       album: 'Octopath Traveler',
     }, 
+    {
+      name: 'A star in the morning sky',
+      path: '../../../assets/FE Three Houses OST  91 A Star in the Morning Sky.mp3', 
+      artist: 'Rei Kondoh', 
+      album: 'Fire Emblem Three Houses',
+    },
     {
       name: 'Conquest', 
       path: '../../../assets/21. Conquest (Calm_Ablaze) (Fates Version) _【Fire Emblem Fates OST_ Map Themes Mixed】 【HQ 1080p】 (1).mp3',
@@ -38,7 +44,26 @@ export class PlayerTestPage implements OnInit {
       path: '../../../assets/5. Dusk Falls (Calm_Fire) _【Fire Emblem Fates OST_ Map Themes Mixed】 【HQ 1080p】.mp3',
       artist: 'Rei Kondoh',
       album: 'Fire Emblem Fates',
+    }, 
+    {
+      name: 'March to Deliverance', 
+      path: '../../../assets/BGM_0000008E [1].mp3', 
+      artist: 'Takafumi Wada', 
+      album: 'Fire Emblem Echoes',
+    },
+    {
+      name: 'Left Alone', 
+      path: '../../../assets/Terraria Calamity Mod Music - Left Alone - Theme of Brimstone Elemental.mp3', 
+      artist: 'DM DOKURO', 
+      album: 'Calamity Mod',
+    }, 
+    {
+      name: 'Leviathan Trilogy', 
+      path: '../../../assets/Terraria Calamity Mod Music - Leviathan Trilogy.mp3', 
+      artist: 'DM DOKURO', 
+      album: 'Calamity Mod',
     }
+
   ];
 
   
