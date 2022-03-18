@@ -62,6 +62,12 @@ export class PlayerTestPage implements OnInit {
       path: '../../../assets/Terraria Calamity Mod Music - Leviathan Trilogy.mp3', 
       artist: 'DM DOKURO', 
       album: 'Calamity Mod',
+    },
+    {
+      name: 'Elysium in the Dream', 
+      path: '../../../assets/Elysium in the Dream - Xenoblade Chronicles 2 OST [007].mp3', 
+      artist: 'Yasunori Mitsuda', 
+      album: 'Xenoblade Chronicles 2', 
     }
 
   ];
