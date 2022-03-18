@@ -82,6 +82,14 @@
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+
+  /** orang **/
+  --ion-color-orang: linear-gradient(90deg, rgba(249,182,106,1) 0%, rgba(201,100,26,1) 100%, rgba(201,100,26,1) 100%);
+  --ion-color-orang-rgb: 244, 245, 248;
+  --ion-color-orang-contrast: #000000;
+  --ion-color-orang-contrast-rgb: 0, 0, 0;
+  --ion-color-orang-shade: #d7d8da;
+  --ion-color-orang-tint: #f5f6f9;
 }
 
 @media (prefers-color-scheme: dark) {

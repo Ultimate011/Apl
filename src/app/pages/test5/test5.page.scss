@@ -167,7 +167,7 @@ Other
     background: rgba(255, 255, 255, 0.5);
     cursor: pointer;
     overflow: hidden;
-    margin-left: 2px;
+    margin-left: 23px;
     box-shadow: 1px 10px 30px 1px white;
     
 }  
@@ -194,6 +194,11 @@ Other
     // border-color: white;
 }
 
+.navbar{
+    display: flex; 
+    justify-content: center;
+}
+
 .navbar a{
     text-decoration: none;
     color: white;
@@ -203,8 +208,8 @@ Other
     // background-color: darkgrey;
     padding: 1.5%;
     bottom: 0;
-
 }
+
 
 .navbar a:nth-of-type(1){
     float: left;

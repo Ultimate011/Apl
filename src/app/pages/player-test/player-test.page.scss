@@ -146,7 +146,7 @@ Other
     // background: #FEB9FD; 
     cursor: pointer;
     overflow: hidden;
-    margin-left: 2px;
+    margin-left: 23px;
     box-shadow: 1px 10px 30px 1px white;
     // box-shadow: 1px 10px 30px 1px #FEB9FD;
     
@@ -172,6 +172,11 @@ Other
     // border: 1px;
     // border-style: solid hidden hidden hidden;
     // border-color: white;
+}
+
+.navbar{
+    display: flex; 
+    justify-content: center;
 }
 
 .navbar a{
@@ -388,6 +393,14 @@ ion-item{
     white-space: nowrap;
 }
 
+// .hide-bttn{
+//     display: none;
+// }
+
+.hide-toolbar{
+    background-color: rgba(255, 255, 255, 0);
+}
+
 /**
 ------------------------------
 Media Queries
@@ -474,7 +487,7 @@ Media Queries
     }
 }
 
-@media (min-height: 600px){
+@media (max-height: 600px){
     .scroll{
         height: 21%;
     }
