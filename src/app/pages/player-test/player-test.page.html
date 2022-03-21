@@ -56,7 +56,7 @@
         </ion-label>
         <ion-icon name="heart-outline" class="icon-heart"></ion-icon>
       </div>
-
+      
       <div class="playlist-item2">
         <ion-label class="artist">
           {{ track.artist }}
@@ -66,6 +66,12 @@
           {{ track.album }}
         </ion-label> 
       </div>
+      <!-- <div class="playlist-bar">
+
+        <ion-col size="12" class="">
+          <ion-range #range [(ngModel)]="progress" max="100" color="success" (touchend)="seek()" (mouseup)="seek()"></ion-range>
+        </ion-col>
+      </div> -->
     </div> 
     <!-- <a href="../../../assets/Terraria Calamity Mod Music - Leviathan Trilogy.mp3" -->
   <!-- </ion-list> -->
@@ -134,11 +140,13 @@
 
 
         <ion-button fill="clear" class ="play-btn hide-bttn" (click)="togglePlayer(false)" (click)="playBtn()" *ngIf="!isPlaying" color="light">
-          <ion-icon slot="icon-only" name="play"></ion-icon>
+          <!-- <ion-icon slot="icon-only" name="play"></ion-icon> -->
+          <ion-icon slot="icon-only" name="play-outline"></ion-icon>
         </ion-button>
 
         <ion-button fill="clear" class="play-btn hide-bttn" (click)="togglePlayer(true)" *ngIf="isPlaying" color="light">
-          <ion-icon slot="icon-only" name="pause"></ion-icon>
+          <!-- <ion-icon slot="icon-only" name="pause"></ion-icon> -->
+          <ion-icon slot="icon-only" name="pause-outline"></ion-icon>
         </ion-button>
 
         <ion-button class="hide-bttn" fill="clear"(click)="next()" color="light">
