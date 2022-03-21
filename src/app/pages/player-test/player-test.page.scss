@@ -488,8 +488,64 @@ Media Queries
     }
 }
 
+@media (min-width: 444px){
+    .scroll {
+        height: 41.5%;
+    }
+}
+
+@media (min-width: 574px){
+    .scroll{
+        height: 41%;
+    }
+}
+
+@media (min-width: 780px){
+    .scroll{
+        height: 40.5%;
+    }
+}
+
+@media (min-width: 957px){
+    .scroll{
+        height: 40%;
+    }
+}
+
+@media (min-width: 1097px){
+    .scroll{
+        height: 39.5%;
+    }
+}
+
+@media (min-width: 1271px){
+    .scroll{
+        height: 39%;
+    }
+}
+
+@media (min-width: 1416px){
+    .scroll{
+        height: 38.5%;
+    }
+}
+
+@media (min-width: 1588px){
+    .scroll{
+        height: 38%;
+    }
+}
+
+@media (min-width: 1708px){
+    .scroll{
+        height: 37.5%;
+    }
+}
+
+
 @media (max-height: 600px){
     .scroll{
         height: 21%;
     }
 }
+
