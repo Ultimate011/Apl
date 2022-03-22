@@ -557,10 +557,10 @@ Media Query
     border-radius: 10px;
     border-style: solid;
     width: 42%;
-    height: 78px;
+    height: 110px;
     font-size: 30px;
     float: left;
-    margin-left: 1.5rem;
+    margin-left: 2rem;
 }
 
 .first img{
@@ -572,10 +572,10 @@ Media Query
     border-radius: 10px;
     border-style: solid;
     width: 42%;
-    height: 78px;
+    height: 110px;
     font-size: 30px;
     float: right;
-    margin-right: 1.5rem;
+    margin-right: 2rem;
 }
 
 .second img{
@@ -586,10 +586,10 @@ Media Query
     border-radius: 10px;
     border-style: solid;
     width: 42%;
-    height: 117px;
+    height: 110px;
     font-size: 30px;
     float: left; 
-    margin-left: 1.5rem;
+    margin-left: 2rem;
     margin-top: 30px;
 }
 
@@ -601,10 +601,10 @@ Media Query
     border-radius: 10px;
     border-style: solid;
     width: 42%;
-    height: 100px;
+    height: 110px;
     font-size: 30px;
     float: right;
-    margin-right: 1.5rem;
+    margin-right: 2rem;
     margin-top: 30px;
 }
 
@@ -612,5 +612,43 @@ Media Query
     width: 90px;
 }
 
+.genres p:nth-of-type(1){
+    size: 500px 300px;
+}
+.genres p:nth-of-type(2){
+    size: 500px 300px;
+}
+.genres p:nth-of-type(3){
+    size: 500px 300px;
+}
+.genres p:nth-of-type(4){
+    size: 500px 300px;
+}
+.genres p:nth-of-type(5){
+    size: 500px 300px;
+}
+.genres p:nth-of-type(6){
+    size: 500px 300px;
+}
+.genres p:nth-of-type(7){
+    size: 500px 300px;
+}
+.genres p:nth-of-type(8){
+    size: 500px 300px;
+}
+.genres p:nth-of-type(9){
+    size: 500px 300px;
+}
+.genres p:nth-of-type(10){
+    size: 500px 300px;
+}
+
+.genres-title{
+    font-size: 42px;
+}
+
+.seek-bar {
+    margin-left: 50px;
+}
 
 }
