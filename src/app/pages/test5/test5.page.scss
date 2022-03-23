@@ -266,15 +266,11 @@ Media Query
     }
 
     .disk{
-
-    }
-
-    .disk.play{
         position: relative; 
         display: block; 
         margin: 40px auto; 
-        width: 1280px; 
-        height: 1280px; 
+        width: 875px; 
+        height: 875px; 
         border-radius: 50%;
         background-image: url("http://unsplash.it/480");
         background-size: cover;
@@ -283,17 +279,50 @@ Media Query
         // animation-play-state: paused;
         margin-top: 200;
         // right: 50%;
-        right: 69%;
+        right: 55%;
     }
+
+    // .disk.play{
+
+    // }
 
     .disk::before{
         position: absolute; 
         top: 50%;
         left: 50%; 
         transform: translate(-50%, -50%);
-        width: 100px; 
-        height: 100px; 
+        width: 200px; 
+        height: 200px; 
         border-radius: 50%; 
         background: #000;
+    }
+
+    .icon-heart{
+        font-size: 50px;
+        float: right;
+        margin-right: 15px;  
+        margin-bottom: 100px;
+        color: white; 
+    }
+    
+    .icon-shuffle{
+        font-size: 50px;
+        float: right;
+        margin-right: 15px; 
+        margin-bottom: 100px;
+        color: white;
+        
+    }
+
+    .title{
+        font-size: 25px; 
+    }
+
+    .subtitle{
+        font-size: 50px;
+    }
+
+    .back{
+        font-size: 50px;
     }
 }
