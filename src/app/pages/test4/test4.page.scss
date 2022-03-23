@@ -371,3 +371,86 @@ Other
     padding-left: 45px; 
     padding-right: 45px;
 }
+
+
+/**
+--------------------
+Media Query
+--------------------
+**/
+
+@media (min-width: 820px){
+    .seek-bar{
+        margin-left: 50px;
+    }
+
+    .title{
+        font-size: 60px;
+    }
+
+    .setting1{
+        height: 48px; 
+        padding-bottom: 4px; 
+        margin-bottom: 3px;
+    }
+
+    .setting1 p{
+        font-size: 40px;
+    }
+
+    .theme1{
+        border: 1px;
+        border-style: solid;
+        width: 50px;
+        height: 50px;
+        margin-top: 10px; 
+    }
+    
+    .theme2{
+        border: 1px;
+        border-style: solid; 
+        width: 50px;
+        height: 50px;
+        margin-top: 10px; 
+        margin-left: 10px;
+    }
+    
+    .theme3{
+        border: 1px;
+        border-style: solid; 
+        width: 50px;
+        height: 50px;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+    .setting2{
+        height: 48px; 
+        padding-bottom: 4px; 
+    }
+
+    .setting2 p{
+        font-size: 40px;
+        width: 400px;
+    }
+
+    .setting3{
+        height: 48px; 
+        padding-bottom: 4px;
+    }
+
+    .setting3 p{
+        font-size: 40px;
+    }
+
+    .setting4{
+        height: 48px; 
+        padding-bottom: 4px; 
+    }
+
+    .setting4 p{
+        font-size: 40px; 
+    }
+
+    
+}
