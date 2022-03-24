@@ -208,8 +208,24 @@ Featured Songs
     margin: 0px 2rem 0px 2rem;
 }
 .featured-p p:nth-of-type(5){
-    margin: 0px 2.5rem 0px 2.5rem;
+    margin: 0px 2rem 0px 2.5rem;
 }
+.featured-p p:nth-of-type(6){
+    margin: 0px 2.3rem 0px 2.1rem;
+}
+.featured-p p:nth-of-type(7){
+    margin: 0px 2.2rem 0px 2rem;
+}
+.featured-p p:nth-of-type(8){
+    margin: 0px 2.3rem 0px 2rem;
+}
+.featured-p p:nth-of-type(9){
+    margin: 0px 2.2rem 0px 2rem;
+}
+.featured-p p:nth-of-type(10){
+    margin: 0px 2.5rem 0px 2rem;
+}
+
 
 /**
 ---------------------
@@ -302,4 +318,114 @@ Genre Songs
     height: 58.5%;
     overflow: auto;
     white-space: nowrap;
+}
+
+/**
+---------------------
+Media Query
+---------------------
+**/
+
+@media(min-width: 820px){
+    .seek-bar{
+        margin-left: 50px;
+    }
+    .playlist-title{
+        margin-left: 90px;
+    }
+    .icon-play{
+        font-size: 60px; 
+    }
+    .icon-heart{
+        font-size: 45px;
+        margin-right: 75px;
+    }
+    .playlist-item{
+        height: 45px; 
+    }
+    .playlist-item p{
+        font-size: 30px;
+        margin-left: 7.5px;
+        margin-top: 3px;
+    }
+    .playlist-item2 p:nth-of-type(1){
+        margin-left: 77px;
+    }
+    
+    .playlist-item2 p:nth-of-type(2){
+        margin-left: 15px; 
+        margin-right: 15px;
+    }
+    // .playlist-item2{
+
+    // }
+    .playlist-item2 p{
+        font-size: 18px;
+    }
+    .seek-bar {
+        margin-left: 50px;
+    }
+    .playlist-button p{ 
+        font-size: 30px;
+    }
+    .title p{
+        font-size: 50px; 
+    }
+    .subtitle{
+        font-size: 40px;
+    }
+
+    .scroll{
+        height: 64%;
+    }
+
+    .featured-title{
+        font-size: 30px;
+    }
+
+    .back{
+        font-size: 50px;
+    }
+
+    .featured-p p{
+        font-size: 25px;
+    }
+
+    .featured-songs{
+        height: 150px;
+    }
+
+}
+
+@media(min-width: 820px){
+    .featured-p p:nth-of-type(1){
+        margin: 0px 1.65rem 0px 2rem;
+    }
+    .featured-p p:nth-of-type(2){
+        margin: 0px 1.65rem 0px 1.5rem;
+    }
+    .featured-p p:nth-of-type(3){
+        margin: 0px 1.7rem 0px 1.6rem;
+    }
+    .featured-p p:nth-of-type(4){
+        margin: 0px 1.5rem 0px 1.6rem;
+    }
+    .featured-p p:nth-of-type(5){
+        margin: 0px 2rem 0px 1.7rem;
+    }
+    .featured-p p:nth-of-type(6){
+        margin: 0px 1.5rem 0px 1.3rem;
+    }
+    .featured-p p:nth-of-type(7){
+        margin: 0px 1.5rem 0px 1.6rem;
+    }
+    .featured-p p:nth-of-type(8){
+        margin: 0px 1.5rem 0px 1.6rem;
+    }
+    .featured-p p:nth-of-type(9){
+        margin: 0px 1.5rem 0px 1.8rem;
+    }
+    .featured-p p:nth-of-type(10){
+        margin: 0px 2.5rem 0px 1.9rem;
+    }
 }
