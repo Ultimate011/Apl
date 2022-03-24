@@ -152,25 +152,154 @@ Featured Songs
 --------------------
 **/
 
-.featured-items{
-
+.featured-title{
+    margin-top: 30px;
+    margin-left: 16px; 
+    font-size: 20px; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.featured-items p{
+.featured-songs{
+    margin: 4px, 4px;
+    padding: 4px;
+    /**background-color: #08c708;**/
+    width: 100%;
+    height: 140px;
+    overflow: auto;
+    white-space: nowrap;
+    // display: flex;
+}
 
+.featured-img{
+    
+}
+
+.featured-songs p{
+    margin: 3px 1.3rem 1px 1.3rem;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+}
+
+.featured-p{
+    display: flex;
 }
 
 .tracks{
-    //margin: 4px, 4px;
-    padding: 4px;
-    /**background-color: #08c708;**/
-    // width: 100%;
-    overflow: auto;
-    white-space: nowrap;
-    margin-top: 5px;
-    display: flex;
+    margin-left: 10px; 
+    // margin-right: 10px;
+    border-radius: 10px;
 }
 
 .tracks img{
 
+}
+
+.featured-p p:nth-of-type(1){
+    margin: 0px 2.2rem 0px 2.5rem;
+}
+.featured-p p:nth-of-type(2){
+    margin: 0px 1.5rem 0px 2rem;
+}
+.featured-p p:nth-of-type(3){
+    margin: 0px 2.2rem 0px 2.7rem;
+}
+.featured-p p:nth-of-type(4){
+    margin: 0px 2rem 0px 2rem;
+}
+.featured-p p:nth-of-type(5){
+    margin: 0px 2.5rem 0px 2.5rem;
+}
+
+/**
+---------------------
+Genre Songs
+---------------------
+**/
+
+.playlist-title{
+    font-size: 30px;
+    margin-left: 45px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.playlist-song{
+    border: none;
+    margin-top: 3%;
+    // background-color: red;
+}
+    
+.icon-play{
+    // float: left;
+    // margin-left: 1px;
+    font-size: 40px;
+    color: white;
+    border: 2px;
+    border-style: solid;
+    border-radius: 100%;
+    padding-left: 4px;
+    padding-top: 2px; 
+    padding-bottom: 2px;
+}
+    
+.icon-heart{
+    font-size: 30px;
+    color: white;
+    float: right;
+    margin-top: 4px;
+    margin-right: 30px;
+}
+    
+.playlist-item{
+    display: flex;
+    width: 100%;
+    height: 30px;
+    // align-items: center;
+    // justify-content: center;
+    // background-color: yellow;
+    width: 80%;
+    margin-left: 10%;
+    
+}
+    
+.playlist-item p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder; 
+    font-size: 20px;
+    margin-left: 5px;
+    margin-top: 2px;
+}
+    
+.playlist-item2 p:nth-of-type(1){
+    margin-left: 54px;
+    
+}
+    
+.playlist-item2 p:nth-of-type(2){
+    margin-left: 10px; 
+    margin-right: 10px;
+}
+    
+.playlist-item2{
+    display: flex;
+    width: 80%;
+    margin-left: 10%;
+    // justify-content: center;
+}
+    
+.playlist-item2 p{
+    font-size: 12px;
+}
+    
+.playlist-item img:nth-of-type(2){
+    float: right;
+}
+
+.scroll{
+    width: 100%;
+    // height: 37%;
+    height: 58.5%;
+    overflow: auto;
+    white-space: nowrap;
 }
