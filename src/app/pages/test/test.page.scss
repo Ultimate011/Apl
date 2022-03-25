@@ -305,7 +305,8 @@ background-color: white;
 }
 
 
-.genres p:nth-of-type(1){
+// .genres p:nth-of-type(1){
+    .dance{
     border: 1px;
     border-style: hidden;
     border-radius: 10px;
@@ -328,7 +329,12 @@ background-color: white;
     margin-bottom: 1rem;
     }
 
-.genres p:nth-of-type(2){
+    a{
+        text-decoration: none;
+    }
+
+// .genres p:nth-of-type(2){
+    .jazz{
     border: 1px;
     border-style: hidden;
     border-radius: 10px;
@@ -352,7 +358,8 @@ background-color: white;
 
 }
 
-.genres p:nth-of-type(3){
+// .genres p:nth-of-type(3){
+    .rock{
     border: 1px;
     border-style: hidden;
     border-radius: 10px;
@@ -376,7 +383,8 @@ background-color: white;
     
 }
 
-.genres p:nth-of-type(4){
+// .genres p:nth-of-type(4){
+    .pop{
     border: 1px;
     border-style: hidden;
     border-radius: 10px;
@@ -401,7 +409,8 @@ background-color: white;
     
 }
 
-.genres p:nth-of-type(5){
+// .genres p:nth-of-type(5){
+    .rap{
     border: 1px;
     border-style: hidden;
     border-radius: 10px;
@@ -424,7 +433,8 @@ background-color: white;
     margin-bottom: 1rem;
 }
 
-.genres p:nth-of-type(6){
+// .genres p:nth-of-type(6){
+    .indie{
     border: 1px;
     border-style: hidden;
     border-radius: 10px;
@@ -447,7 +457,8 @@ background-color: white;
     margin-bottom: 1rem;
 }
 
-.genres p:nth-of-type(7){
+// .genres p:nth-of-type(7){
+    .country{
     border: 1px;
     border-style: hidden;
     border-radius: 10px;
@@ -471,7 +482,8 @@ background-color: white;
     margin-bottom: 1rem;
 }
 
-.genres p:nth-of-type(8){
+// .genres p:nth-of-type(8){
+    .classical{
     border: 1px;
     border-style: hidden;
     border-radius: 10px;
@@ -496,7 +508,8 @@ background-color: white;
     
 }
 
-.genres p:nth-of-type(9){
+// .genres p:nth-of-type(9){
+    .blues{
     border: 1px;
     border-style: hidden;
     border-radius: 10px;
@@ -519,7 +532,8 @@ background-color: white;
     margin-bottom: 1rem;
 }
 
-.genres p:nth-of-type(10){
+// .genres p:nth-of-type(10){
+    .electronic{
     border: 1px;
     border-style: hidden;
     border-radius: 10px;
