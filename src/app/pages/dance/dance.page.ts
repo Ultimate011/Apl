@@ -24,11 +24,12 @@ export interface Track {
 declare var playBtn;
 
 @Component({
-  selector: 'app-player-test',
-  templateUrl: './player-test.page.html',
-  styleUrls: ['./player-test.page.scss'],
+  selector: 'app-dance',
+  templateUrl: './dance.page.html',
+  styleUrls: ['./dance.page.scss'],
 })
-export class PlayerTestPage implements OnInit {
+
+export class DancePage implements OnInit {
   item$: Observable<any[]>;
   playlist: Track[] = [
     {
