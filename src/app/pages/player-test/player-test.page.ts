@@ -2,7 +2,10 @@ import { Howl } from 'howler';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { IonRange } from '@ionic/angular';
 import { createAnimation, Animation } from '@ionic/core';
-
+import { Firestore, collectionData, collection} from '@angular/fire/firestore';
+import { AngularFirestore } from '@angular/fire/compat/firestore';
+import { Observable } from 'rxjs';
+import { tap } from 'rxjs/operators';
 
 export interface Track {
   name: string; 
@@ -19,7 +22,9 @@ export interface Track {
   templateUrl: './player-test.page.html',
   styleUrls: ['./player-test.page.scss'],
 })
+
 export class PlayerTestPage implements OnInit {
+  item$: Observable<any[]>;
   playlist: Track[] = [
     {
       name: 'Ending Theme', 
@@ -84,9 +89,16 @@ export class PlayerTestPage implements OnInit {
   }
 
 
-  constructor() {
-    /** playBtn(); */ 
-   }
+  constructor(firestore: Firestore, private afs: AngularFirestore) {
+    const item$ = this.afs.collection('tracks', ref => ref.where('title', '==', 'Yasunori Nishiki')).valueChanges
+    // this.item$ = collectionData(col);
+    // this.item$.pipe(
+    //   tap(items=>{
+    //     console.log(items)
+    //   })
+    // ).subscribe()
+  }
+
 
 
   start(track: Track) {
