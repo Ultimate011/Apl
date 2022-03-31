@@ -80,6 +80,10 @@ const routes: Routes = [
   {
     path: 'electronic',
     loadChildren: () => import('./pages/electronic/electronic.module').then( m => m.ElectronicPageModule)
+  },
+  {
+    path: 'hamburger-test',
+    loadChildren: () => import('./pages/hamburger-test/hamburger-test.module').then( m => m.HamburgerTestPageModule)
   }
 
 ];

@@ -91,6 +91,24 @@ export class PlayerTestPage implements OnInit {
       artist: 'Yuki Kajiura', 
       album: 'Sword Art Online',
     },
+    {
+      name: 'Sea-P-U Remix', 
+      path: "../../../assets/'Sea-P-U' Blitz It! by the Chirpy Chips (Remix) - Splatoon 2.mp3", 
+      artist: 'Sheddy', 
+      album: 'Splatoon 2 Remixes', 
+    },
+    {
+      name: 'Void', 
+      path: '../../../assets/Terraria Calamity Mod Music - _void_ - Theme of The Lower Abyss.mp3', 
+      artist: 'DM DOKURO', 
+      album: 'Calamity Mod',
+    },
+    {
+      name: "I Wanna' Go Home - Eng Cover",
+      path: "../../../assets/ENGLISH _I Wanna' Go Home_ KonoSuba (Akane Sasu Sora).mp3", 
+      artist: 'Akane Sasu Sora', 
+      album: 'Konosuba', 
+    },
   ];
 
   activeTrack: Track = null;
