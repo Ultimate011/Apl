@@ -1,274 +1,199 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>FriaPlay</ion-title>
+  </ion-toolbar>
+</ion-header> -->
 
 <ion-content>
   <div class="navbar">
     <!-- <svg height="210" width="500" class="Line-test"> -->
-      <!-- <line x1="7.5%" y1="200" x2="92%" y2="200" style="stroke:rgba(255, 255, 255, 0.5);stroke-width:2" /> -->
-      <!-- Sorry, 40yo210ur browser d420oes not support inline SVG.4 -->
+    <!-- <line x1="7.5%" y1="200" x2="92%" y2="200" style="stroke:rgba(255, 255, 255, 0.5);stroke-width:2" /> -->
+    <!-- Sorry, 40yo210ur browser d420oes not support inline SVG.4 -->
     <!-- </svg> -->
     <div class="s-solider">
       <div class="seek-bar"></div>
     </div>
-    
-    <a href="/test"><ion-icon name="home-outline"></ion-icon></a>
-    <a href="/test1"><ion-icon name="search-outline"></ion-icon></a>
-    <a href="/test2"><ion-icon name="library-outline"></ion-icon></a>
+
+    <a href="#"><ion-icon name="home-outline"></ion-icon></a>
+    <a href="../test1/test1.page.html"
+      ><ion-icon name="search-outline"></ion-icon
+    ></a>
+    <a href="#Library"><ion-icon name="library-outline"></ion-icon></a>
   </div>
 
-
-  <a href="/test" class="back">
+  <a href="/test" class="settings">
     <ion-icon name="chevron-back-outline" class="settings"></ion-icon>
   </a>
 
-<div class="title">
-  <p>Blues</p>
-</div>
-
-<p class="featured-title">Featured songs</p>
-
-<div class="featured-songs">
-  <div class="featured-img">
-    <img src="http://unsplash.it/100" class="tracks" alt="#">
-    <img src="http://unsplash.it/100" class="tracks" alt="#">
-    <img src="http://unsplash.it/100" class="tracks" alt="#">
-    <img src="http://unsplash.it/100" class="tracks" alt="#">
-    <img src="http://unsplash.it/100" class="tracks" alt="#">
-    <img src="http://unsplash.it/100" class="tracks" alt="#">
-    <img src="http://unsplash.it/100" class="tracks" alt="#">
-    <img src="http://unsplash.it/100" class="tracks" alt="#">
-    <img src="http://unsplash.it/100" class="tracks" alt="#">
-    <img src="http://unsplash.it/100" class="tracks" alt="#">
+  <div class="title">
+    <p>Blues</p>
   </div>
   
-  <div class="featured-p">
-    <p>Song</p>
-    <p>Song</p>
-    <p>Song</p>
-    <p>Song</p>
-    <p>Song</p>
-    <p>Song</p>
-    <p>Song</p>
-    <p>Song</p>
-    <p>Song</p>
-    <p>Song</p>
-  </div>
-</div>
-
-
-<p class="playlist-title">Songs from Blues</p>
-<div class="scroll">
-
-  <div class="playlist-song">
-    <ion-icon name="heart-outline" class="icon-heart"></ion-icon>
-    <div class="playlist-item">
-      <ion-icon name="play-outline" class="icon-play"></ion-icon>
-      <!-- <img src="http://unsplash.it/50" alt="Play button"> -->
-      <p>Song title</p>
+  <p class="featured-title">Featured songs</p>
+  
+  <div class="featured-songs">
+    <div class="featured-img">
+      <img src="http://unsplash.it/100" class="tracks" alt="#">
+      <img src="http://unsplash.it/100" class="tracks" alt="#">
+      <img src="http://unsplash.it/100" class="tracks" alt="#">
+      <img src="http://unsplash.it/100" class="tracks" alt="#">
+      <img src="http://unsplash.it/100" class="tracks" alt="#">
+      <img src="http://unsplash.it/100" class="tracks" alt="#">
+      <img src="http://unsplash.it/100" class="tracks" alt="#">
+      <img src="http://unsplash.it/100" class="tracks" alt="#">
+      <img src="http://unsplash.it/100" class="tracks" alt="#">
+      <img src="http://unsplash.it/100" class="tracks" alt="#">
     </div>
     
-    <div class="playlist-item2">
-      <p>Song Artist</p>
-      <p>-</p>
-      <p>Song Album</p>
+    <div class="featured-p">
+      <p>Song</p>
+      <p>Song</p>
+      <p>Song</p>
+      <p>Song</p>
+      <p>Song</p>
+      <p>Song</p>
+      <p>Song</p>
+      <p>Song</p>
+      <p>Song</p>
+      <p>Song</p>
     </div>
-    <!-- <img src="http://unsplash.it/30" alt="Heart"> -->
   </div>
   
-<div class="playlist-song">
-  <ion-icon name="heart-outline" class="icon-heart"></ion-icon>
-  <div class="playlist-item">
+  <p class="playlist-title">Songs from Blues</p>
+
+  <div class="scroll">
+    <!-- <ion-list> -->
+    <div class="bttn" *ngFor="let track of item$ | async">
+      <div class="playlist-item1">
+        <ion-icon name="play-outline" class="icon-play"></ion-icon>
+        <ion-label
+          class="Label" [color]="track == activeTrack ? 'success' : 'light' "(click)="start(track)">
+          {{ track.title }}
+        </ion-label>
+        <ion-icon name="heart-outline" class="icon-heart"></ion-icon>
+      </div>
+
+      <div class="playlist-item2">
+        <ion-label class="artist"> {{ track.artist }} </ion-label>
+        <p class="line">-</p>
+        <ion-label class="album"> {{ track.album }} </ion-label>
+      </div>
+      <!-- <div class="playlist-bar">
+
+        <ion-col size="12" class="">
+          <ion-range #range [(ngModel)]="progress" max="100" color="success" (touchend)="seek()" (mouseup)="seek()"></ion-range>
+        </ion-col>
+      </div> -->
+    </div>
+    <!-- <a href="../../../assets/Terraria Calamity Mod Music - Leviathan Trilogy.mp3" -->
+    <!-- </ion-list> -->
+
+    <!-- <div class="playlist-item">
     <ion-icon name="play-outline" class="icon-play"></ion-icon>
-    <!-- <img src="http://unsplash.it/50" alt="Play button"> -->
-    <p>Song title</p>
-  </div>
-  
-  <div class="playlist-item2">
-    <p>Song Artist</p>
-    <p>-</p>
-    <p>Song Album</p>
-  </div>
-  <!-- <img src="http://unsplash.it/30" alt="Heart"> -->
-</div>
+    <p class="Label" *ngFor="let track of playlist" (click)="start(track)">
+      {{ track.name }}
+    </p>
+    <p class="artist" *ngFor="let track of playlist">
+      {{ track.artist }} 
+    </p>
+    <ion-icon name="heart-outline" class="icon-heart"></ion-icon>
+  </div> -->
 
-<div class="playlist-song">
-  <ion-icon name="heart-outline" class="icon-heart"></ion-icon>
-  <div class="playlist-item">
-    <ion-icon name="play-outline" class="icon-play"></ion-icon>
-    <!-- <img src="http://unsplash.it/50" alt="Play button"> -->
-    <p>Song title</p>
-  </div>
-  
-  <div class="playlist-item2">
-    <p>Song Artist</p>
-    <p>-</p>
-    <p>Song Album</p>
-  </div>
-  <!-- <img src="http://unsplash.it/30" alt="Heart"> -->
-</div>
+    <!-- <ion-list>
+    <slot>
+      <ion-icon name="play-outline" class="icon-play"></ion-icon>
+      <ion-label class="Label" [color]="track == activeTrack ? 'success' : 'light' ">
+        {{ track.name }}
+      </ion-label>
+      <ion-label class="artist" [color]="track == activeTrack ? 'success' : 'light' ">
+        {{ track.artist }} 
+      </ion-label>
+      <ion-icon name="heart-outline" class="icon-heart"></ion-icon>
+    </slot>
+  </ion-list> -->
 
+    <!-- <ion-list>
+      <ion-item button *ngFor="let track of playlist" (click)="start(track)">
+        <ion-icon name="play-outline" class="icon-play"></ion-icon>
+        <ion-label class="Label" *ngFor="let track of playlist" (click)="start(track)">
+          {{ track.name }}
+        </ion-label>
+        <ion-label class="artist" *ngFor="let track of playlist">
+          {{ track.artist }}
+        </ion-label>
+        <ion-icon name="heart-outline" class="icon-heart"></ion-icon>
+      </ion-item>
+    </ion-list> -->
 
-<div class="playlist-song">
-  <ion-icon name="heart-outline" class="icon-heart"></ion-icon>
-  <div class="playlist-item">
-    <ion-icon name="play-outline" class="icon-play"></ion-icon>
-    <!-- <img src="http://unsplash.it/50" alt="Play button"> -->
-    <p>Song title</p>
-  </div>
-  
-  <div class="playlist-item2">
-    <p>Song Artist</p>
-    <p>-</p>
-    <p>Song Album</p>
-  </div>
-  <!-- <img src="http://unsplash.it/30" alt="Heart"> -->
-</div>
+    <!-- <div
+      class="disk"
+      [ngClass]="{
+    'playing': isPlaying
+  }"
+    ></div> -->
 
-
-<div class="playlist-song">
-  <ion-icon name="heart-outline" class="icon-heart"></ion-icon>
-  <div class="playlist-item">
-    <ion-icon name="play-outline" class="icon-play"></ion-icon>
-    <!-- <img src="http://unsplash.it/50" alt="Play button"> -->
-    <p>Song title</p>
+    <!-- <script type="text/javascript" src="../../../assets/Player-test.js"></script> -->
   </div>
-  
-  <div class="playlist-item2">
-    <p>Song Artist</p>
-    <p>-</p>
-    <p>Song Album</p>
-  </div>
-  <!-- <img src="http://unsplash.it/30" alt="Heart"> -->
-</div>
-
-<div class="playlist-song">
-  <ion-icon name="heart-outline" class="icon-heart"></ion-icon>
-  <div class="playlist-item">
-    <ion-icon name="play-outline" class="icon-play"></ion-icon>
-    <!-- <img src="http://unsplash.it/50" alt="Play button"> -->
-    <p>Song title</p>
-  </div>
-  
-  <div class="playlist-item2">
-    <p>Song Artist</p>
-    <p>-</p>
-    <p>Song Album</p>
-  </div>
-  <!-- <img src="http://unsplash.it/30" alt="Heart"> -->
-</div>
-
-<div class="playlist-song">
-  <ion-icon name="heart-outline" class="icon-heart"></ion-icon>
-  <div class="playlist-item">
-    <ion-icon name="play-outline" class="icon-play"></ion-icon>
-    <!-- <img src="http://unsplash.it/50" alt="Play button"> -->
-    <p>Song title</p>
-  </div>
-  
-  <div class="playlist-item2">
-    <p>Song Artist</p>
-    <p>-</p>
-    <p>Song Album</p>
-  </div>
-  <!-- <img src="http://unsplash.it/30" alt="Heart"> -->
-</div>
-
-<div class="playlist-song">
-  <ion-icon name="heart-outline" class="icon-heart"></ion-icon>
-  <div class="playlist-item">
-    <ion-icon name="play-outline" class="icon-play"></ion-icon>
-    <!-- <img src="http://unsplash.it/50" alt="Play button"> -->
-    <p>Song title</p>
-  </div>
-  
-  <div class="playlist-item2">
-    <p>Song Artist</p>
-    <p>-</p>
-    <p>Song Album</p>
-  </div>
-  <!-- <img src="http://unsplash.it/30" alt="Heart"> -->
-</div>
-
-<div class="playlist-song">
-  <ion-icon name="heart-outline" class="icon-heart"></ion-icon>
-  <div class="playlist-item">
-    <ion-icon name="play-outline" class="icon-play"></ion-icon>
-    <!-- <img src="http://unsplash.it/50" alt="Play button"> -->
-    <p>Song title</p>
-  </div>
-  
-  <div class="playlist-item2">
-    <p>Song Artist</p>
-    <p>-</p>
-    <p>Song Album</p>
-  </div>
-  <!-- <img src="http://unsplash.it/30" alt="Heart"> -->
-</div>
-
-<div class="playlist-song">
-  <ion-icon name="heart-outline" class="icon-heart"></ion-icon>
-  <div class="playlist-item">
-    <ion-icon name="play-outline" class="icon-play"></ion-icon>
-    <!-- <img src="http://unsplash.it/50" alt="Play button"> -->
-    <p>Song title</p>
-  </div>
-  
-  <div class="playlist-item2">
-    <p>Song Artist</p>
-    <p>-</p>
-    <p>Song Album</p>
-  </div>
-  <!-- <img src="http://unsplash.it/30" alt="Heart"> -->
-</div>
-
-<div class="playlist-song">
-  <ion-icon name="heart-outline" class="icon-heart"></ion-icon>
-  <div class="playlist-item">
-    <ion-icon name="play-outline" class="icon-play"></ion-icon>
-    <!-- <img src="http://unsplash.it/50" alt="Play button"> -->
-    <p>Song title</p>
-  </div>
-  
-  <div class="playlist-item2">
-    <p>Song Artist</p>
-    <p>-</p>
-    <p>Song Album</p>
-  </div>
-  <!-- <img src="http://unsplash.it/30" alt="Heart"> -->
-</div>
-
-<div class="playlist-song">
-  <ion-icon name="heart-outline" class="icon-heart"></ion-icon>
-  <div class="playlist-item">
-    <ion-icon name="play-outline" class="icon-play"></ion-icon>
-    <!-- <img src="http://unsplash.it/50" alt="Play button"> -->
-    <p>Song title</p>
-  </div>
-  
-  <div class="playlist-item2">
-    <p>Song Artist</p>
-    <p>-</p>
-    <p>Song Album</p>
-  </div>
-  <!-- <img src="http://unsplash.it/30" alt="Heart"> -->
-</div>
-
-<div class="playlist-song">
-  <ion-icon name="heart-outline" class="icon-heart"></ion-icon>
-  <div class="playlist-item">
-    <ion-icon name="play-outline" class="icon-play"></ion-icon>
-    <!-- <img src="http://unsplash.it/50" alt="Play button"> -->
-    <p>Song title</p>
-  </div>
-  
-  <div class="playlist-item2">
-    <p>Song Artist</p>
-    <p>-</p>
-    <p>Song Album</p>
-  </div>
-  <!-- <img src="http://unsplash.it/30" alt="Heart"> -->
-</div>
-
-</div>
- 
-
-
 </ion-content>
+
+<ion-footer *ngIf="activeTrack">
+  <ion-toolbar class="hide-toolbar" color="dark">
+    <ion-row>
+      <!-- <ion-col size="12" class="ion-text-center">
+        {{ activeTrack.name}}
+      </ion-col> -->
+      <ion-col size="12" class="">
+        <ion-range
+          #range
+          [(ngModel)]="progress"
+          max="100"
+          color="success"
+          (touchend)="seek()"
+          (mouseup)="seek()"
+        ></ion-range>
+      </ion-col>
+      <ion-col size="12" class="ion-text-center">
+        <ion-button
+          class="hide-bttn"
+          fill="clear"
+          (click)="prev()"
+          color="light"
+        >
+          <ion-icon slot="icon-only" name="play-skip-back"></ion-icon>
+        </ion-button>
+
+        <ion-button
+          fill="clear"
+          class="play-btn hide-bttn"
+          (click)="togglePlayer(false)"
+          (click)="playBtn()"
+          *ngIf="!isPlaying"
+          color="light"
+        >
+          <!-- <ion-icon slot="icon-only" name="play"></ion-icon> -->
+          <ion-icon slot="icon-only" name="play-outline"></ion-icon>
+        </ion-button>
+
+        <ion-button
+          fill="clear"
+          class="play-btn hide-bttn"
+          (click)="togglePlayer(true)"
+          *ngIf="isPlaying"
+          color="light"
+        >
+          <!-- <ion-icon slot="icon-only" name="pause"></ion-icon> -->
+          <ion-icon slot="icon-only" name="pause-outline"></ion-icon>
+        </ion-button>
+
+        <ion-button
+          class="hide-bttn"
+          fill="clear"
+          (click)="next()"
+          color="light"
+        >
+          <ion-icon slot="icon-only" name="play-skip-forward"></ion-icon>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-footer>

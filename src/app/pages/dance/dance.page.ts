@@ -106,7 +106,7 @@ export class DancePage implements OnInit {
 
   constructor(firestore: Firestore) {
     const ref = collection(firestore, 'tracks');
-    const q = query(ref, where('track', '==', '1'));
+    const q = query(ref, where('genre', '==', 'Dance'));
     this.item$ = collectionData(q);
 
     this.item$

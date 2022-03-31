@@ -202,13 +202,14 @@
   ----------------------
   **/
   
-  .title {
-    display: flex;
+  .title{
+    font-family: Tw Cen MT;
+    font-size: 35px;
+    display: flex; 
     justify-content: center;
-    width: 100%;
-    margin-top: 25px;
-    margin-bottom: 10px;
-  }
+    margin-right: 44px; 
+    margin-top: 17px;
+}
   
   .title p {
     font-size: 35px;
@@ -273,6 +274,82 @@
   
   /**
   ----------------------
+  Top
+  ----------------------
+  **/
+
+  .featured-title{
+    margin-top: 30px;
+    margin-left: 16px; 
+    font-size: 20px; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.featured-songs{
+    margin: 4px, 4px;
+    padding: 4px;
+    /**background-color: #08c708;**/
+    width: 100%;
+    height: 140px;
+    overflow: auto;
+    white-space: nowrap;
+    // display: flex;
+}
+
+.featured-songs p{
+  margin: 3px 1.3rem 1px 1.3rem;
+  font-size: 18px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: left;
+}
+
+.featured-p{
+  display: flex;
+}
+
+.tracks{
+  margin-left: 10px; 
+  // margin-right: 10px;
+  border-radius: 10px;
+}
+
+.tracks img{
+
+}
+
+.featured-p p:nth-of-type(1){
+  margin: 0px 2.2rem 0px 2.5rem;
+}
+.featured-p p:nth-of-type(2){
+  margin: 0px 1.5rem 0px 2rem;
+}
+.featured-p p:nth-of-type(3){
+  margin: 0px 2.2rem 0px 2.7rem;
+}
+.featured-p p:nth-of-type(4){
+  margin: 0px 2rem 0px 2rem;
+}
+.featured-p p:nth-of-type(5){
+  margin: 0px 2rem 0px 2.5rem;
+}
+.featured-p p:nth-of-type(6){
+  margin: 0px 2.3rem 0px 2.1rem;
+}
+.featured-p p:nth-of-type(7){
+  margin: 0px 2.2rem 0px 2rem;
+}
+.featured-p p:nth-of-type(8){
+  margin: 0px 2.3rem 0px 2rem;
+}
+.featured-p p:nth-of-type(9){
+  margin: 0px 2.2rem 0px 2rem;
+}
+.featured-p p:nth-of-type(10){
+  margin: 0px 2.5rem 0px 2rem;
+}
+
+  /**
+  ----------------------
   Content
   ----------------------
   **/
@@ -280,6 +357,13 @@
   ion-item {
     --background: var(--ion-color-orang-gradient);
   }
+
+  .playlist-title{
+    font-size: 30px;
+    margin-left: 45px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
   
   .Label {
     // border: 10px;
@@ -371,7 +455,7 @@
   
   .scroll {
     width: 100%;
-    height: 42%;
+    height: 58.5%;
     overflow: auto;
     white-space: nowrap;
   }
