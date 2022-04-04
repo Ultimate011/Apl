@@ -278,7 +278,7 @@ Other
   font-size: 15px;
   display: flex; 
   justify-content: center;
-  margin-right: 70px;
+  // margin-right: 120px;
   // margin-top: 15px;  
 }
 
@@ -287,8 +287,9 @@ Other
   font-size: 35px;
   display: flex; 
   justify-content: center;
-  margin-right: 70px; 
+  // margin-right: 120px; 
 }
+
 
 
 /**
@@ -476,6 +477,62 @@ Other
   
 }
 
+// .buttons-disk{
+//   position: fixed; 
+//   height: 100%; 
+//   width: 100%;
+//   display: flex; 
+//   align-items: center;
+// }
+
+.buttons{
+  font-size: 40px;
+  position: fixed;
+}
+.buttons1{
+  font-size: 45px;
+  position: fixed;
+}
+.buttons2{
+  font-size: 45px;
+  position: fixed;
+}
+.buttons3{
+  font-size: 40px;
+  position: fixed;
+}
+
+// .buttons:nth-of-type(1){
+//   top: 200px;
+// }
+// .buttons:nth-of-type(2){
+//   top: 150px
+// }
+// .buttons:nth-of-type(3){
+//   top: 150px;
+// }
+// .buttons:nth-of-type(4){
+//   top: 500px;
+//   left: 100px;
+// }
+
+.buttons{
+  top: 335px;
+}
+
+.buttons1{
+  top: 407px;
+  left: 53px;
+}
+
+.buttons2{
+  top: 407px;
+  left: 53px;
+}
+
+.buttons3{
+  top: 491px;
+}
 
 /**
 ------------------------
