@@ -33,7 +33,8 @@ const routes: Routes = [
   {
     path: 'line-test',
     loadChildren: () => import('./pages/line-test/line-test.module').then( m => m.LineTestPageModule)
-  },  {
+  },
+  {
     path: 'test5',
     loadChildren: () => import('./pages/test5/test5.module').then( m => m.Test5PageModule)
   },
@@ -84,6 +85,10 @@ const routes: Routes = [
   {
     path: 'hamburger-test',
     loadChildren: () => import('./pages/hamburger-test/hamburger-test.module').then( m => m.HamburgerTestPageModule)
+  },
+  {
+    path: 'test7',
+    loadChildren: () => import('./pages/test7/test7.module').then( m => m.Test7PageModule)
   }
 
 ];
