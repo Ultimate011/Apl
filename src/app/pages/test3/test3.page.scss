@@ -10,29 +10,29 @@ Themes
 **/
 
 ion-content{
-    // --background: var(--ion-color-orang-gradient);
+    --background: var(--ion-color-orang-gradient);
     // --background: var(--ion-color-blue-gradient); 
-    --background: var(--ion-color-purple-gradient);
+    // --background: var(--ion-color-purple-gradient);
 }
 
 .navbar{
     // background: linear-gradient(90deg, rgba(249,182,106,1) 0%, rgba(201,100,26,1) 100%, rgba(201,100,26,1) 100%);
-    // --background: var(--ion-color-orang-gradient);    
+    --background: var(--ion-color-orang-gradient);    
     // --background: var(--ion-color-blue-gradient);
-    --background: var(--ion-color-purple-gradient);
+    // --background: var(--ion-color-purple-gradient);
 }
 
 p{
     color: white;
 }
 
-.playlist-button{
-    // background: #F7B367;
-    // border-color: #FFFFFF; 
+.button-theme{
+    background: #F7B367;
+    border-color: #FFFFFF; 
     // background: #2D2F33; 
     // border-color: #FFFFFF; 
-    background: #6A007D; 
-    border-color: #FEB9FD; 
+    // background: #6A007D; 
+    // border-color: #FEB9FD; 
 }
 
 
@@ -85,13 +85,13 @@ Other
     width: 86.9%;
     height: 2.5px;
     border-radius: 10px;
-    // background: rgba(255, 255, 255, 0.5);
-    background: #FEB9FD; 
+    background: rgba(255, 255, 255, 0.5);
+    // background: #FEB9FD; 
     cursor: pointer;
     overflow: hidden;
     margin-left: 23px;
-    // box-shadow: 1px 10px 30px 1px white;
-    box-shadow: 1px 10px 30px 1px #FEB9FD;
+    box-shadow: 1px 10px 30px 1px white;
+    // box-shadow: 1px 10px 30px 1px #FEB9FD;
     
 }  
 
@@ -223,7 +223,7 @@ Other
     margin-bottom: 20px;
 }
 
-.playlist-button{
+.button-theme{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -235,7 +235,7 @@ Other
     color: white;
 }
 
-.playlist-button p{ 
+.button-theme p{ 
     font-size: 20px;
     // padding-top: 1px; 
     // padding-bottom: 1px;
@@ -390,7 +390,7 @@ margin-top: 3%;
     .seek-bar {
         margin-left: 50px;
     }
-    .playlist-button p{ 
+    .button-theme p{ 
         font-size: 30px;
     }
     .title p{

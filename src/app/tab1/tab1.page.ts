@@ -18,4 +18,9 @@ export class Tab1Page {
   enableLight() {
     this.theme.enableLight();
   }
+
+
+  enableOrang() {
+    this.theme.enableOrang();
+  }
 }
