@@ -22,16 +22,15 @@
   <div class="title">
     <p>Settings</p>
   </div>
-
     <!-- <container class="Themes"> -->
       <div class="setting1">
         <!-- <img src="http://unsplash.it/49"> -->
         <ion-icon name="chevron-forward-outline" class="icon-arrow"></ion-icon>
         <p>Themes</p>
         <container class="themes">
-          <div class="theme1"></div>
-          <div class="theme2"></div>
-          <div class="theme3"></div>
+          <div class="theme1" (click)="enableOrang()"></div>
+          <div class="theme2" (click)="enableBlue()"></div>
+          <div class="theme3" (click)="enablePurple()"></div>
         </container>
       </div>
     <!-- </container> -->
@@ -56,8 +55,8 @@
     </div> 
 
     <container class="settings-donate">
-      <div class="donate">
-        <a href="#">Donate</a>
+      <div class="button-theme">
+        <p href="#">Donate</p>
       </div>
     </container>
 
