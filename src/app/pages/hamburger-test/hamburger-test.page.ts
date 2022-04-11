@@ -190,7 +190,7 @@ export class HamburgerTestPage implements OnInit {
     this.progress = (seek / this.player.duration()) * 100 || 0;
     setTimeout(() => {
       this.updateProgress();
-    }, 1000);
+    }, 100);
   }
 
   ngOnInit() {}

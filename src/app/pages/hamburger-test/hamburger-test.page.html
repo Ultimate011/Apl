@@ -22,9 +22,9 @@
   </div>
 
   <div class="content">
-    <!-- <div class="settings">
+    <div class="settings">
       <ion-icon name="chevron-back-outline" class="settings"></ion-icon>
-    </div> -->
+    </div>
     <div class="title">
       <p>Namn på spellista</p>
     </div>
@@ -64,7 +64,7 @@
   </div>
 
   <input type="checkbox" id="myInput">
-  <label for="myInput">
+  <label class="testham" for="myInput">
       <span class="bar top"></span>
       <span class="bar middle"></span>
       <span class="bar bottom"></span>
@@ -136,6 +136,12 @@
       
       <div class="hide-bttn" fill="clear" (click)="next()" color="light">
         <ion-icon class="buttons3" slot="icon-only" name="play-skip-forward"></ion-icon>
+      </div>
+
+      <div class="range">
+        <ion-range #range [(ngModel)]="progress" max="100" color="success" (touchend)="seek()" (mouseup)="seek()">
+
+        </ion-range>
       </div>
     </div>
     </ion-content>
