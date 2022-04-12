@@ -10,11 +10,22 @@ import { provideFirebaseApp, getApp, initializeApp } from '@angular/fire/app';
 import { getFirestore, provideFirestore } from '@angular/fire/firestore';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
+import { NgxsModule } from '@ngxs/store';
+import { environment } from 'src/environments/environment';
+import { NgxsLoggerPluginModule } from '@ngxs/logger-plugin';
+import { NgxsStoragePluginModule } from '@ngxs/storage-plugin';
+import { AppState } from './states/app.states';
 
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
   imports: [
+      NgxsStoragePluginModule.forRoot({key:['app']}),  
+      NgxsLoggerPluginModule.forRoot(),
+        NgxsModule.forRoot([AppState], {
+          developmentMode: !environment.production
+        }),
+
     BrowserModule,
     IonicModule.forRoot(),
     AppRoutingModule,

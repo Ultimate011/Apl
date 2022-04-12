@@ -12,6 +12,7 @@ import {
 import { AngularFirestore } from '@angular/fire/compat/firestore';
 import { Observable } from 'rxjs';
 import { tap } from 'rxjs/operators';
+import { ActivatedRoute } from '@angular/router';
 
 export interface Track {
   name: string;
@@ -80,34 +81,34 @@ export class HamburgerTestPage implements OnInit {
       album: 'Xenoblade Chronicles 2',
     },
     {
-      name: 'In This Cruel Land', 
-      path: '../../../assets/In This Cruel Land.mp3', 
-      artist: 'Yuki Kajiura', 
+      name: 'In This Cruel Land',
+      path: '../../../assets/In This Cruel Land.mp3',
+      artist: 'Yuki Kajiura',
       album: 'Sword Art Online',
     },
     {
       name: 'Gunland',
-      path: '../../../assets/Gunland.mp3', 
-      artist: 'Yuki Kajiura', 
+      path: '../../../assets/Gunland.mp3',
+      artist: 'Yuki Kajiura',
       album: 'Sword Art Online',
     },
     {
-      name: 'Sea-P-U Remix', 
-      path: "../../../assets/'Sea-P-U' Blitz It! by the Chirpy Chips (Remix) - Splatoon 2.mp3", 
-      artist: 'Sheddy', 
-      album: 'Splatoon 2 Remixes', 
+      name: 'Sea-P-U Remix',
+      path: "../../../assets/'Sea-P-U' Blitz It! by the Chirpy Chips (Remix) - Splatoon 2.mp3",
+      artist: 'Sheddy',
+      album: 'Splatoon 2 Remixes',
     },
     {
-      name: 'Void', 
-      path: '../../../assets/Terraria Calamity Mod Music - _void_ - Theme of The Lower Abyss.mp3', 
-      artist: 'DM DOKURO', 
+      name: 'Void',
+      path: '../../../assets/Terraria Calamity Mod Music - _void_ - Theme of The Lower Abyss.mp3',
+      artist: 'DM DOKURO',
       album: 'Calamity Mod',
     },
     {
       name: "I Wanna' Go Home - Eng Cover",
-      path: "../../../assets/ENGLISH _I Wanna' Go Home_ KonoSuba (Akane Sasu Sora).mp3", 
-      artist: 'Akane Sasu Sora', 
-      album: 'Konosuba', 
+      path: "../../../assets/ENGLISH _I Wanna' Go Home_ KonoSuba (Akane Sasu Sora).mp3",
+      artist: 'Akane Sasu Sora',
+      album: 'Konosuba',
     },
   ];
 
@@ -135,10 +136,14 @@ export class HamburgerTestPage implements OnInit {
       .subscribe();
   }
 
-  start(track: Track) {
+  start(track: any) {
     if (this.player) {
       this.player.stop();
     }
+    this.activeTrack = track;
+    const disk: any = document.querySelector('.disk');
+    console.log(track);
+    disk.style.backgroundImage = `url(${track.img})`;
     this.player = new Howl({
       src: [track.path],
       html5: true,
