@@ -146,16 +146,43 @@ Other
 -------------------------------
 **/
 
-.navbar svg{
-    margin-bottom: 3px;
-    margin-top: -500px;
-    width: 100%; 
+
+.s-solider{
+    // width: 400px;
+    width: 100%;
+    position: absolute;
+    top: -5px;
+    margin-right: 14px;
+    margin-left: 25px;
+}
+
+
+.seek-bar {
+    -webkit-appearance: none;
+    // width: 360px;
+    // width: 90%;
+    width: 86.9%;
+    height: 2.5px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    overflow: hidden;
+    margin-left: 23px;
+    box-shadow: 1px 10px 30px 1px white;
+    
+}  
+
+//.navbar svg{
+    //margin-bottom: 3px;
+    //margin-top: -500px;
+    //width: 100%; 
     // padding-top: -100px;
     // box-shadow: 3px 3px 3px 3px rgba(255, 255, 255, 0.2);
     // box-shadow: 6px 3px 3px rgba(255, 255, 255, 0.4);
     // border: 1px; 
     // border-style: solid; 
-}
+
+
 
 .navbar{
     position: fixed;
@@ -167,6 +194,11 @@ Other
     // border-color: white;
 }
 
+.navbar{
+    display: flex; 
+    justify-content: center;
+}
+
 .navbar a{
     text-decoration: none;
     color: white;
@@ -176,24 +208,26 @@ Other
     // background-color: darkgrey;
     padding: 1.5%;
     bottom: 0;
-
 }
+
 
 .navbar a:nth-of-type(1){
     float: left;
-    margin-left: 10%;
+    // margin-left: 10%;
     // font-size: 30px;
 }
 
 .navbar a:nth-of-type(2){
     float: left;
     margin-left: 22.5%;
+    margin-right: 22.5%;
 }
 
 .navbar a:nth-of-type(3){
     float: right;
-    margin-right: 10%;
+    // margin-right: 10%;
 }
+
 
 /**
 -------------------------------
@@ -206,6 +240,7 @@ Other
     float: right;
     margin-right: 15px;  
     margin-bottom: 100px;
+    color: white; 
 }
 
 .icon-shuffle{
@@ -213,4 +248,81 @@ Other
     float: right;
     margin-right: 15px; 
     margin-bottom: 100px;
+    color: white;
+    
+}
+
+
+/**
+------------------------
+Media Query
+------------------------
+**/
+
+
+@media (min-width: 820px){
+    .seek-bar{
+        margin-left: 50px;
+    }
+
+    .disk{
+        position: relative; 
+        display: block; 
+        margin: 40px auto; 
+        width: 875px; 
+        height: 875px; 
+        border-radius: 50%;
+        background-image: url("http://unsplash.it/480");
+        background-size: cover;
+        box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.08);
+        animation: rotate 20s linear infinite;
+        // animation-play-state: paused;
+        margin-top: 200;
+        // right: 50%;
+        right: 55%;
+    }
+
+    // .disk.play{
+
+    // }
+
+    .disk::before{
+        position: absolute; 
+        top: 50%;
+        left: 50%; 
+        transform: translate(-50%, -50%);
+        width: 200px; 
+        height: 200px; 
+        border-radius: 50%; 
+        background: #000;
+    }
+
+    .icon-heart{
+        font-size: 50px;
+        float: right;
+        margin-right: 15px;  
+        margin-bottom: 100px;
+        color: white; 
+    }
+    
+    .icon-shuffle{
+        font-size: 50px;
+        float: right;
+        margin-right: 15px; 
+        margin-bottom: 100px;
+        color: white;
+        
+    }
+
+    .title{
+        font-size: 25px; 
+    }
+
+    .subtitle{
+        font-size: 50px;
+    }
+
+    .back{
+        font-size: 50px;
+    }
 }

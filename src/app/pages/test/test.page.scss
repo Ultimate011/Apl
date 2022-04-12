@@ -102,16 +102,43 @@ Other
     font-family: segoe UI;
 }
 
-.navbar svg{
-    margin-bottom: 3px;
-    margin-top: -500px;
-    width: 100%; 
+
+.s-solider{
+    // width: 400px;
+    width: 100%;
+    position: absolute;
+    top: -5px;
+    margin-right: 14px;
+    margin-left: 25px;
+}
+
+
+.seek-bar {
+    -webkit-appearance: none;
+    // width: 360px;
+    // width: 90%;
+    width: 86.9%;
+    height: 2.5px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    overflow: hidden;
+    margin-left: 23px;
+    box-shadow: 1px 10px 30px 1px white;
+    
+}  
+
+//.navbar svg{
+    //margin-bottom: 3px;
+    //margin-top: -500px;
+    //width: 100%; 
     // padding-top: -100px;
     // box-shadow: 3px 3px 3px 3px rgba(255, 255, 255, 0.2);
     // box-shadow: 6px 3px 3px rgba(255, 255, 255, 0.4);
     // border: 1px; 
     // border-style: solid; 
-}
+
+
 
 .navbar{
     position: fixed;
@@ -121,6 +148,11 @@ Other
     // border: 1px;
     // border-style: solid hidden hidden hidden;
     // border-color: white;
+}
+
+.navbar{
+    display: flex; 
+    justify-content: center;
 }
 
 .navbar a{
@@ -137,19 +169,21 @@ Other
 
 .navbar a:nth-of-type(1){
     float: left;
-    margin-left: 10%;
+    // margin-left: 10%;
     // font-size: 30px;
 }
 
 .navbar a:nth-of-type(2){
     float: left;
     margin-left: 22.5%;
+    margin-right: 22.5%;
 }
 
 .navbar a:nth-of-type(3){
     float: right;
-    margin-right: 10%;
+    // margin-right: 10%;
 }
+
 
 .settings{
     float: right;
@@ -271,7 +305,8 @@ background-color: white;
 }
 
 
-.genres p:nth-of-type(1){
+// .genres p:nth-of-type(1){
+    .dance{
     border: 1px;
     border-style: hidden;
     border-radius: 10px;
@@ -294,7 +329,12 @@ background-color: white;
     margin-bottom: 1rem;
     }
 
-.genres p:nth-of-type(2){
+    a{
+        text-decoration: none;
+    }
+
+// .genres p:nth-of-type(2){
+    .jazz{
     border: 1px;
     border-style: hidden;
     border-radius: 10px;
@@ -318,7 +358,8 @@ background-color: white;
 
 }
 
-.genres p:nth-of-type(3){
+// .genres p:nth-of-type(3){
+    .rock{
     border: 1px;
     border-style: hidden;
     border-radius: 10px;
@@ -342,7 +383,8 @@ background-color: white;
     
 }
 
-.genres p:nth-of-type(4){
+// .genres p:nth-of-type(4){
+    .pop{
     border: 1px;
     border-style: hidden;
     border-radius: 10px;
@@ -367,7 +409,8 @@ background-color: white;
     
 }
 
-.genres p:nth-of-type(5){
+// .genres p:nth-of-type(5){
+    .rap{
     border: 1px;
     border-style: hidden;
     border-radius: 10px;
@@ -390,7 +433,8 @@ background-color: white;
     margin-bottom: 1rem;
 }
 
-.genres p:nth-of-type(6){
+// .genres p:nth-of-type(6){
+    .indie{
     border: 1px;
     border-style: hidden;
     border-radius: 10px;
@@ -413,7 +457,8 @@ background-color: white;
     margin-bottom: 1rem;
 }
 
-.genres p:nth-of-type(7){
+// .genres p:nth-of-type(7){
+    .country{
     border: 1px;
     border-style: hidden;
     border-radius: 10px;
@@ -437,7 +482,8 @@ background-color: white;
     margin-bottom: 1rem;
 }
 
-.genres p:nth-of-type(8){
+// .genres p:nth-of-type(8){
+    .classical{
     border: 1px;
     border-style: hidden;
     border-radius: 10px;
@@ -462,7 +508,8 @@ background-color: white;
     
 }
 
-.genres p:nth-of-type(9){
+// .genres p:nth-of-type(9){
+    .blues{
     border: 1px;
     border-style: hidden;
     border-radius: 10px;
@@ -485,7 +532,8 @@ background-color: white;
     margin-bottom: 1rem;
 }
 
-.genres p:nth-of-type(10){
+// .genres p:nth-of-type(10){
+    .electronic{
     border: 1px;
     border-style: hidden;
     border-radius: 10px;
@@ -506,4 +554,124 @@ background-color: white;
     margin-left: 7%; 
     margin-right: 7%;
     margin-bottom: 3rem;
+}
+
+
+/**
+--------------------
+Media Query
+--------------------
+**/
+
+@media (min-width: 820px){
+ .title{
+     font-size: 37.5px;
+ }   
+ .first{
+    border-radius: 10px;
+    border-style: solid;
+    width: 42%;
+    height: 110px;
+    font-size: 30px;
+    float: left;
+    margin-left: 2rem;
+}
+
+.first img{
+    width: 90px;
+    // height: 60px;
+}
+
+    .second{
+    border-radius: 10px;
+    border-style: solid;
+    width: 42%;
+    height: 110px;
+    font-size: 30px;
+    float: right;
+    margin-right: 2rem;
+}
+
+.second img{
+    width: 90px;
+}
+
+.third{
+    border-radius: 10px;
+    border-style: solid;
+    width: 42%;
+    height: 110px;
+    font-size: 30px;
+    float: left; 
+    margin-left: 2rem;
+    margin-top: 30px;
+}
+
+.third img{
+    width: 90px;
+}
+
+.fourth{
+    border-radius: 10px;
+    border-style: solid;
+    width: 42%;
+    height: 110px;
+    font-size: 30px;
+    float: right;
+    margin-right: 2rem;
+    margin-top: 30px;
+}
+
+.fourth img{
+    width: 90px;
+}
+
+.genres p:nth-of-type(1){
+    background-size: 500px 300px;
+    height: 155px;
+}
+.genres p:nth-of-type(2){
+    background-size: 500px 300px;
+    height: 155px;
+}
+.genres p:nth-of-type(3){
+    background-size: 500px 300px;
+    height: 155px;
+}
+.genres p:nth-of-type(4){
+    background-size: 500px 300px;
+    height: 155px;
+}
+.genres p:nth-of-type(5){
+    background-size: 500px 300px;
+    height: 155px;
+}
+.genres p:nth-of-type(6){
+    background-size: 500px 300px;
+    height: 155px;
+}
+.genres p:nth-of-type(7){
+    background-size: 500px 300px;
+    height: 155px;
+}
+.genres p:nth-of-type(8){
+    background-size: 500px 300px;
+}
+.genres p:nth-of-type(9){
+    background-size: 500px 300px;
+    height: 155px;
+}
+.genres p:nth-of-type(10){
+    background-size: 500px 300px;
+    height: 155px;
+}
+
+.genres-title{
+    font-size: 42px;
+}
+
+.seek-bar {
+    margin-left: 50px;
+}
+
 }

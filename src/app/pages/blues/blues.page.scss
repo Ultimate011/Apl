@@ -1,0 +1,637 @@
+    // ion-content, ion-list, ion-item{
+//     --background: var(--ion-color-dark);
+//     --ion-background-color: var(--ion-color-dark);
+// }
+
+.disk {
+    position: relative;
+    display: block;
+    margin: 40px auto;
+    width: 480px;
+    height: 480px;
+    border-radius: 50%;
+    background-image: url("http://unsplash.it/480");
+    background-size: cover;
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.08);
+    animation: rotate 20s linear infinite;
+    animation-play-state: paused;
+  }
+  
+  .playing {
+    animation-play-state: running;
+  }
+  
+  .disk::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #000;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  // .play-btn{
+  //     cursor: pointer;
+  
+  // }
+  
+  /**
+  ----------------------
+  Actual CSS
+  ----------------------
+  **/
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /**
+  -------------------------------
+  Themes
+  -------------------------------
+  **/
+  
+  ion-content {
+    --background: var(--ion-color-orang-gradient);
+    // --background: var(--ion-color-blue-gradient);
+    // --background: var(--ion-color-purple-gradient);
+  }
+  
+  .navbar {
+    // background: linear-gradient(90deg, rgba(249,182,106,1) 0%, rgba(201,100,26,1) 100%, rgba(201,100,26,1) 100%);
+    --background: var(--ion-color-orang-gradient);
+    // --background: var(--ion-color-blue-gradient);
+    // --background: var(--ion-color-purple-gradient);
+  }
+  
+  p {
+    color: white;
+  }
+  
+  .playlist-button {
+    background: #f7b367;
+    border-color: #ffffff;
+    // background: #2D2F33;
+    // border-color: #FFFFFF;
+    // background: #6A007D;
+    // border-color: #FEB9FD;
+  }
+  
+  /**
+  -------------------------------
+  Other
+  -------------------------------
+  **/
+  
+  @font-face {
+    src: url(../../../assets/TCM_____.TTF);
+    font-family: Tw Cen MT;
+    src: url(../../../assets/seguisb.ttf);
+    font-family: segoe UI;
+  }
+  
+  .settings {
+    float: left;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    font-size: 34px;
+    color: white;
+  }
+  
+  /**
+  -------------------------------
+              Navbar          
+  -------------------------------
+  **/
+  
+  .s-solider {
+    // width: 400px;
+    width: 100%;
+    position: absolute;
+    top: -5px;
+    margin-right: 14px;
+    margin-left: 25px;
+  }
+  
+  .seek-bar {
+    -webkit-appearance: none;
+    // width: 360px;
+    // width: 90%;
+    width: 86.9%;
+    height: 2.5px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.5);
+    // background: #FEB9FD;
+    cursor: pointer;
+    overflow: hidden;
+    margin-left: 23px;
+    box-shadow: 1px 10px 30px 1px white;
+    // box-shadow: 1px 10px 30px 1px #FEB9FD;
+  }
+  
+  //.navbar svg{
+  //margin-bottom: 3px;
+  //margin-top: -500px;
+  //width: 100%;
+  // padding-top: -100px;
+  // box-shadow: 3px 3px 3px 3px rgba(255, 255, 255, 0.2);
+  // box-shadow: 6px 3px 3px rgba(255, 255, 255, 0.4);
+  // border: 1px;
+  // border-style: solid;
+  
+  .navbar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    // padding-top: 2%;
+    // border: 1px;
+    // border-style: solid hidden hidden hidden;
+    // border-color: white;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+    // border: 1px;
+    // border-style: solid;
+    // background-color: darkgrey;
+    padding: 1.5%;
+    bottom: 0;
+  }
+  
+  .navbar a:nth-of-type(1) {
+    float: left;
+    // margin-left: 10%;
+    // font-size: 30px;
+  }
+  
+  .navbar a:nth-of-type(2) {
+    float: left;
+    margin-left: 22.5%;
+    margin-right: 22.5%;
+  }
+  
+  .navbar a:nth-of-type(3) {
+    float: right;
+    // margin-right: 10%;
+  }
+  
+  /**
+  ----------------------
+  Top part
+  ----------------------
+  **/
+  
+  .title{
+    font-family: Tw Cen MT;
+    font-size: 35px;
+    display: flex; 
+    justify-content: center;
+    margin-right: 44px; 
+    margin-top: 17px;
+}
+  
+  .title p {
+    font-size: 35px;
+    // font-weight: bold;
+    // font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Tw Cen MT;
+    // font-family: serif;
+  }
+  
+  .subtitle {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .subtitle p {
+    font-size: 20px;
+    font-weight: lighter;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .playlist {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .playlist img {
+    border-radius: 50px;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .playlist-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36%;
+    border: 3px;
+    border-style: solid;
+    border-radius: 75px;
+    height: 50px;
+    color: white;
+  }
+  
+  .playlist-button p {
+    font-size: 20px;
+    // padding-top: 1px;
+    // padding-bottom: 1px;
+    border-width: 36%;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /**
+  ----------------------
+  Top
+  ----------------------
+  **/
+
+  .featured-title{
+    margin-top: 30px;
+    margin-left: 16px; 
+    font-size: 20px; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.featured-songs{
+    margin: 4px, 4px;
+    padding: 4px;
+    /**background-color: #08c708;**/
+    width: 100%;
+    height: 140px;
+    overflow: auto;
+    white-space: nowrap;
+    // display: flex;
+}
+
+.featured-songs p{
+  margin: 3px 1.3rem 1px 1.3rem;
+  font-size: 18px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: left;
+}
+
+.featured-p{
+  display: flex;
+}
+
+.tracks{
+  margin-left: 10px; 
+  // margin-right: 10px;
+  border-radius: 10px;
+}
+
+.tracks img{
+
+}
+
+.featured-p p:nth-of-type(1){
+  margin: 0px 2.2rem 0px 2.5rem;
+}
+.featured-p p:nth-of-type(2){
+  margin: 0px 1.5rem 0px 2rem;
+}
+.featured-p p:nth-of-type(3){
+  margin: 0px 2.2rem 0px 2.7rem;
+}
+.featured-p p:nth-of-type(4){
+  margin: 0px 2rem 0px 2rem;
+}
+.featured-p p:nth-of-type(5){
+  margin: 0px 2rem 0px 2.5rem;
+}
+.featured-p p:nth-of-type(6){
+  margin: 0px 2.3rem 0px 2.1rem;
+}
+.featured-p p:nth-of-type(7){
+  margin: 0px 2.2rem 0px 2rem;
+}
+.featured-p p:nth-of-type(8){
+  margin: 0px 2.3rem 0px 2rem;
+}
+.featured-p p:nth-of-type(9){
+  margin: 0px 2.2rem 0px 2rem;
+}
+.featured-p p:nth-of-type(10){
+  margin: 0px 2.5rem 0px 2rem;
+}
+
+  /**
+  ----------------------
+  Content
+  ----------------------
+  **/
+  
+  ion-item {
+    --background: var(--ion-color-orang-gradient);
+  }
+
+  .playlist-title{
+    font-size: 30px;
+    margin-left: 45px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+  
+  .Label {
+    // border: 10px;
+    // border-style: solid;
+    // border-color: black;
+    color: white;
+    width: 200px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    font-size: 15px;
+    margin-left: 5px;
+    margin-top: 6px;
+  }
+  
+  .artist {
+    margin-left: 52px;
+    font-size: 12px;
+    color: white;
+  }
+  
+  .line {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 12px;
+    height: 1px;
+    margin-top: 0;
+    padding-top: 0;
+    color: white;
+  }
+  
+  .album {
+    font-size: 12px;
+    color: white;
+  }
+  
+  .icon-play {
+    // float: left;
+    // margin-left: 1px;
+    font-size: 40px;
+    color: white;
+    border: 2px;
+    border-style: solid;
+    border-radius: 100%;
+    padding-left: 4px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+  
+  .icon-heart {
+    font-size: 30px;
+    color: white;
+    float: right;
+    margin-top: 4px;
+    margin-left: 60px;
+  }
+  
+  .bttn {
+    height: 30px;
+    margin-top: 30px;
+  }
+  
+  .bttn:nth-of-type(1) {
+    // background-color: red;
+    border-style: none;
+  }
+  
+  .playlist-item1 {
+    display: flex;
+    width: 100%;
+    height: 30px;
+    // align-items: center;
+    // justify-content: center;
+    // background-color: yellow;
+    width: 80%;
+    margin-left: 10%;
+  }
+  .playlist-item2 {
+    display: flex;
+    width: 80%;
+    margin-left: 10%;
+    // justify-content: center;
+  }
+  
+  /**
+  -------------------------------
+               Scroll          
+  -------------------------------
+  **/
+  
+  .scroll {
+    width: 100%;
+    height: 58.5%;
+    overflow: auto;
+    white-space: nowrap;
+  }
+  
+  // .hide-bttn{
+  //     display: none;
+  // }
+  
+  .hide-toolbar {
+    background-color: rgba(255, 255, 255, 0);
+  }
+  
+  /**
+  ------------------------------
+  Media Queries
+  ------------------------------
+  **/
+  
+  @media (max-width: 300px) {
+  }
+  
+  @media (min-width: 500px) {
+    .playlist-item1 {
+      margin-left: 18.5%;
+    }
+  
+    .playlist-item2 {
+      margin-left: 18.5%;
+    }
+  }
+  
+  @media (min-width: 600px) {
+    .playlist-item1 {
+      margin-left: 24%;
+      width: 60%;
+      // position: absolute;
+      // left: 50%;
+      // transform: translatex(-50%);
+    }
+  
+    .playlist-item2 {
+      margin-left: 24%;
+      width: 60%;
+    }
+  }
+  
+  @media (min-width: 700px) {
+    .playlist-item1 {
+      margin-left: 28%;
+      margin-right: 0;
+    }
+  
+    .playlist-item2 {
+      margin-left: 28%;
+      margin-right: 0;
+    }
+  }
+  
+  @media (min-width: 800px) {
+    .playlist-item1 {
+      margin-left: 30%;
+    }
+  
+    .playlist-item2 {
+      margin-left: 30%;
+    }
+  }
+  
+  @media (min-width: 900px) {
+    .playlist-item1 {
+      margin-left: 32%;
+    }
+  
+    .playlist-item2 {
+      margin-left: 32%;
+    }
+  }
+  
+  @media (min-width: 1000px) {
+    .playlist-item1 {
+      margin-left: 33%;
+    }
+  
+    .playlist-item2 {
+      margin-left: 33%;
+    }
+  }
+  
+  @media (min-width: 444px) {
+    .scroll {
+      height: 41.5%;
+    }
+  }
+  
+  @media (min-width: 574px) {
+    .scroll {
+      height: 41%;
+    }
+  }
+  
+  @media (min-width: 780px) {
+    .scroll {
+      height: 40.5%;
+    }
+  }
+  
+  @media (min-width: 957px) {
+    .scroll {
+      height: 40%;
+    }
+  }
+  
+  @media (min-width: 820px) {
+    .icon-play {
+      font-size: 60px;
+    }
+    .icon-heart {
+      font-size: 45px;
+      margin-right: 75px;
+    }
+    .playlist-item {
+      height: 45px;
+    }
+    .playlist-item p {
+      font-size: 30px;
+      margin-left: 7.5px;
+      margin-top: 3px;
+    }
+    .playlist-item2 p:nth-of-type(1) {
+      margin-left: 77px;
+    }
+  
+    .playlist-item2 p:nth-of-type(2) {
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+    // .playlist-item2{
+  
+    // }
+    .playlist-item2 p {
+      font-size: 18px;
+    }
+  }
+  
+  @media (min-width: 1097px) {
+    .scroll {
+      height: 39.5%;
+    }
+  }
+  
+  @media (min-width: 1271px) {
+    .scroll {
+      height: 39%;
+    }
+  }
+  
+  @media (min-width: 1416px) {
+    .scroll {
+      height: 38.5%;
+    }
+  }
+  
+  @media (min-width: 1588px) {
+    .scroll {
+      height: 38%;
+    }
+  }
+  
+  @media (min-width: 1708px) {
+    .scroll {
+      height: 37.5%;
+    }
+  }
+  
+  @media (max-height: 600px) {
+    .scroll {
+      height: 21%;
+    }
+  }

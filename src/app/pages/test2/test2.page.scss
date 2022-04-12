@@ -51,7 +51,8 @@ p{
 
 
 .s-solider{
-    width: 400px;
+    // width: 400px;
+    width: 100%;
     position: absolute;
     top: -5px;
     margin-right: 14px;
@@ -61,13 +62,15 @@ p{
 
 .seek-bar {
     -webkit-appearance: none;
-    width: 360px;
+    // width: 360px;
+    // width: 90%;
+    width: 86.9%;
     height: 2.5px;
     border-radius: 10px;
     background: rgba(255, 255, 255, 0.5);
     cursor: pointer;
     overflow: hidden;
-    margin-left: 2px;
+    margin-left: 23px;
     box-shadow: 1px 10px 30px 1px white;
     
 }  
@@ -94,6 +97,11 @@ p{
     // border-color: white;
 }
 
+.navbar{
+    display: flex; 
+    justify-content: center;
+}
+
 .navbar a{
     text-decoration: none;
     color: white;
@@ -108,18 +116,19 @@ p{
 
 .navbar a:nth-of-type(1){
     float: left;
-    margin-left: 10%;
+    // margin-left: 10%;
     // font-size: 30px;
 }
 
 .navbar a:nth-of-type(2){
     float: left;
     margin-left: 22.5%;
+    margin-right: 22.5%;
 }
 
 .navbar a:nth-of-type(3){
     float: right;
-    margin-right: 10%;
+    // margin-right: 10%;
 }
 
 .Img-test{
@@ -182,6 +191,12 @@ Annat
 .låtar img{
     border-radius: 20px;
     margin-left: 0.7rem;
+    size: 120px 120px;
+}
+
+.images{
+    width: 102px; 
+    height: 99px;
 }
 
 .Img-test{
@@ -197,6 +212,44 @@ Annat
     font-size: 18px;
     font-family: Tw Cen MT;
     text-align: left;
+}
+
+.text3{
+    display: flex;
+}
+
+.text3 p{
+    // margin: 2px 2rem 1px 1.5rem;
+    font-size: 15px;
+    font-family: segoe UI;
+    color: #0B0B45;
+}
+
+.text3 p:nth-of-type(1){
+    margin: 2px 1.5rem 1px 2.6rem;
+}
+
+.text3 p:nth-of-type(2){
+    margin: 2px 1rem 1px 2rem;
+}
+
+.text3 p:nth-of-type(3){
+    margin: 2px 0.5rem 1px 1.6rem;
+}
+.text3 p:nth-of-type(4){
+    margin: 2px 1rem 1px 1.5rem;
+}
+
+.text3 p:nth-of-type(5){
+    margin: 2px 1.9rem 1px 2rem;
+}
+
+.text3 p:nth-of-type(6){
+    margin: 2px 2.3rem 1px 2.6rem;
+}
+
+.text3 p:nth-of-type(7){
+    margin: 2px 1.9rem 1px 2.8rem;
 }
 
 
@@ -234,6 +287,11 @@ Annat
 .Artister img{
     border-radius: 100px;
     margin-left: 0.7rem;
+}
+
+.images-artister{
+    width: 120px; 
+    height: 120px;    
 }
 
 .text1{
@@ -278,6 +336,12 @@ Annat
     margin-left: 0.7rem;
 
 }
+
+.images-album{
+    width: 160px; 
+    height: 170px; 
+}
+
 .img1{
     display: flex;
     flex-wrap: nowrap;
@@ -291,7 +355,201 @@ Annat
 .text2 p{
     margin: 2px 1rem 1px 1rem;
     font-family: segoe UI;
-    color: #0B0B45;
+    // color: #0B0B45;
+    color: white;
 }
 
+.text2 p:nth-of-type(1){
+    margin: 2px 3rem 1px 3.4rem;
+}
+
+.text2 p:nth-of-type(2){
+    margin: 2px 3.5rem 1px 3.1rem;
+}
+
+.text2 p:nth-of-type(3){
+    margin: 2px 3.9rem 1px 3.8rem;
+}
+.text2 p:nth-of-type(4){
+    margin: 2px 4rem 1px 4.5rem;
+}
+
+.text2 p:nth-of-type(5){
+    margin: 2px 4rem 1px 4.5rem;
+}
+
+.text2 p:nth-of-type(6){
+    margin: 2px 4.2rem 1px 4rem;
+}
+
+.text2 p:nth-of-type(7){
+    margin: 2px 1.9rem 1px 4rem;
+}
+
+
+/**
+--------------------
+Media Query
+--------------------
+**/
+
+@media (min-width: 820px){
+    .seek-bar{
+        margin-left: 50px;
+    }
+    .images{
+        width: 150px;
+        height: 148px;
+    }
+    .images-artister{
+        width: 150px; 
+        height: 150px;
+    }
+    .images-album{
+        width: 200px; 
+        height: 210px;
+    }
+
+    .låtar p{
+        font-size: 25px;
+    }
+    
+    .Artister p{
+
+    }
+
+    .Album p{
+
+    }
+
+    .text{
+
+    }
+    .text1 p{
+        font-size: 25px;
+    }
+    .text2{
+        font-size: 25px; 
+        color: white;
+    }
+    .text3 p{
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 820px){
+
+    
+    .text p:nth-of-type(1){
+        margin: 2px 1.6rem 1px 1.8rem;
+    }
+    
+    .text p:nth-of-type(2){
+        margin: 2px 1.4rem 1px 2rem;
+    }
+    
+    .text p:nth-of-type(3){
+        margin: 2px 2rem 1px 2rem;
+    }
+    .text p:nth-of-type(4){
+        margin: 2px 2rem 1px 2rem;
+    }
+    
+    .text p:nth-of-type(5){
+        margin: 2px 2rem 1px 2.6rem;
+    }
+    
+    .text p:nth-of-type(6){
+        margin: 2px 2.3rem 1px 2.8rem;
+    }
+    
+    .text p:nth-of-type(7){
+        margin: 2px 1.9rem 1px 3rem;
+    }
+
+
+
+    .text3 p:nth-of-type(1){
+        margin: 2px 3rem 1px 3.5rem;
+    }
+        
+    .text3 p:nth-of-type(2){
+        margin: 2px 1.7rem 1px 2.5rem;
+    }
+        
+    .text3 p:nth-of-type(3){
+        margin: 2px 1.4rem 1px 1.7rem;
+    }
+    .text3 p:nth-of-type(4){
+        margin: 2px 2rem 1px 2.5rem;
+    }
+        
+    .text3 p:nth-of-type(5){
+        margin: 2px 3.3rem 1px 2.5rem;
+    }
+        
+    .text3 p:nth-of-type(6){
+        margin: 2px 4rem 1px 3.6rem;
+    }
+        
+    .text3 p:nth-of-type(7){
+        margin: 2px 1.9rem 1px 3.2rem;
+    }
  
+    
+    .text1 p:nth-of-type(1){
+        margin: 2px 1.8rem 1px 3.3rem;
+    }
+        
+    .text1 p:nth-of-type(2){
+        margin: 2px 0.9rem 1px 2.3rem;
+    }
+        
+    .text1 p:nth-of-type(3){
+        margin: 2px 0.8rem 1px 0.8rem;
+    }
+    .text1 p:nth-of-type(4){
+        margin: 2px 2rem 1px 0.8rem;
+    }
+        
+    .text1 p:nth-of-type(5){
+        margin: 2px 3.1rem 1px 2.3rem;
+    }
+        
+    .text1 p:nth-of-type(6){
+        margin: 2px 3rem 1px 3.6rem;
+    }
+        
+    .text1 p:nth-of-type(7){
+        margin: 2px 1.9rem 1px 3.2rem;
+    }
+
+
+    .text2 p:nth-of-type(1){
+        margin: 2px 1.6rem 1px 3rem;
+    }
+    
+    .text2 p:nth-of-type(2){
+        margin: 2px 3.2rem 1px 3.1rem;
+    }
+    
+    .text2 p:nth-of-type(3){
+        margin: 2px 4.2rem 1px 4rem;
+    }
+    .text2 p:nth-of-type(4){
+        margin: 2px 3.9rem 1px 4.6rem;
+    }
+    
+    .text2 p:nth-of-type(5){
+        margin: 2px 4rem 1px 4.5rem;
+    }
+    
+    .text2 p:nth-of-type(6){
+        margin: 2px 4.2rem 1px 4rem;
+    }
+    
+    .text2 p:nth-of-type(7){
+        margin: 2px 1.9rem 1px 4rem;
+    }
+    
+}

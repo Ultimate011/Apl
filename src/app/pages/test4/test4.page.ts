@@ -1,3 +1,4 @@
+import { ThemeService } from '../../services/theme.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,29 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Test4Page implements OnInit {
 
-  constructor() { }
+  constructor(private theme: ThemeService) { }
 
   ngOnInit() {
+  }
+
+  enableOrang() {
+    this.theme.enableOrang();
+  }
+
+  enableBlue() {
+    this.theme.enableBlue();
+  }
+
+  enablePurple() {
+    this.theme.enablePurple();
+  }
+
+  enableYelgre() {
+    this.theme.enableYelgre();
+  }
+
+  enableSalmon() {
+    this.theme.enableSalmon();
   }
 
 }
