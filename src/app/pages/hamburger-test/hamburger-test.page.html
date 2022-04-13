@@ -47,7 +47,11 @@
     <!-- <ion-list> -->
     <div class="bttn" *ngFor="let track of item$ | async">
       <div class="playlist-item1">
-        <ion-icon name="play-outline" class="icon-play"></ion-icon>
+        <ion-icon
+          name="play-outline"
+          class="icon-play"
+          (click)="start(track)"
+        ></ion-icon>
         <ion-label
           class="Label"
           [color]="track == activeTrack ? 'success' : 'light' "

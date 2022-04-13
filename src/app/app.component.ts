@@ -34,6 +34,7 @@ export class AppComponent implements OnInit {
               this.renderer.removeClass(this.document.body, 'purple-theme');
               this.renderer.removeClass(this.document.body, 'yelgre-theme');
               this.renderer.removeClass(this.document.body, 'salmon-theme');
+              this.renderer.removeClass(this.document.body, 'yelblu-theme');
               break;
 
             case 'light':
@@ -43,6 +44,7 @@ export class AppComponent implements OnInit {
               this.renderer.removeClass(this.document.body, 'purple-theme');
               this.renderer.removeClass(this.document.body, 'yelgre-theme');
               this.renderer.removeClass(this.document.body, 'salmon-theme');
+              this.renderer.removeClass(this.document.body, 'yelblu-theme');
               break;
 
             case 'orang':
@@ -52,6 +54,7 @@ export class AppComponent implements OnInit {
               this.renderer.removeClass(this.document.body, 'purple-theme');
               this.renderer.removeClass(this.document.body, 'yelgre-theme');
               this.renderer.removeClass(this.document.body, 'salmon-theme');
+              this.renderer.removeClass(this.document.body, 'yelblu-theme');
               break;
             case 'blue':
               this.renderer.addClass(this.document.body, 'blue-theme');
@@ -60,6 +63,7 @@ export class AppComponent implements OnInit {
               this.renderer.removeClass(this.document.body, 'purple-theme');
               this.renderer.removeClass(this.document.body, 'yelgre-theme');
               this.renderer.removeClass(this.document.body, 'salmon-theme');
+              this.renderer.removeClass(this.document.body, 'yelblu-theme');
               break;
             case 'purple':
               this.renderer.addClass(this.document.body, 'purple-theme');
@@ -68,6 +72,7 @@ export class AppComponent implements OnInit {
               this.renderer.removeClass(this.document.body, 'blue-theme');
               this.renderer.removeClass(this.document.body, 'yelgre-theme');
               this.renderer.removeClass(this.document.body, 'salmon-theme');
+              this.renderer.removeClass(this.document.body, 'yelblu-theme');
               break;
             case 'yelgre':
               this.renderer.addClass(this.document.body, 'yelgre-theme');
@@ -76,6 +81,7 @@ export class AppComponent implements OnInit {
               this.renderer.removeClass(this.document.body, 'blue-theme');
               this.renderer.removeClass(this.document.body, 'purple-theme');
               this.renderer.removeClass(this.document.body, 'salmon-theme');
+              this.renderer.removeClass(this.document.body, 'yelblu-theme');
               break;
             case 'salmon':
               this.renderer.addClass(this.document.body, 'salmon-theme');
@@ -84,8 +90,17 @@ export class AppComponent implements OnInit {
               this.renderer.removeClass(this.document.body, 'blue-theme');
               this.renderer.removeClass(this.document.body, 'purple-theme');
               this.renderer.removeClass(this.document.body, 'yelgre-theme');
+              this.renderer.removeClass(this.document.body, 'yelblu-theme');
               break;
-
+            case 'yelblu':
+              this.renderer.addClass(this.document.body, 'yelblu-theme');
+              this.renderer.removeClass(this.document.body, 'salmon-theme');
+              this.renderer.removeClass(this.document.body, 'dark-theme');
+              this.renderer.removeClass(this.document.body, 'orang-theme');
+              this.renderer.removeClass(this.document.body, 'blue-theme');
+              this.renderer.removeClass(this.document.body, 'purple-theme');
+              this.renderer.removeClass(this.document.body, 'yelgre-theme');
+              break;
             default:
               break;
           }

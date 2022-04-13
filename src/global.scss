@@ -16,7 +16,7 @@
 @import "~@ionic/angular/css/normalize.css";
 @import "~@ionic/angular/css/structure.css";
 @import "~@ionic/angular/css/typography.css";
-@import '~@ionic/angular/css/display.css';
+@import "~@ionic/angular/css/display.css";
 
 /* Optional CSS utils that can be commented out */
 @import "~@ionic/angular/css/padding.css";
@@ -25,424 +25,528 @@
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
 
+:root {
+  .dark-theme {
+    --ion-color-primary: yellow;
+    --ion-color-primary-rgb: 56, 128, 255;
+    --ion-color-primary-contrast: #ffffff;
+    --ion-color-primary-contrast-rgb: 255, 255, 255;
+    --ion-color-primary-shade: yellow;
+    --ion-color-primary-tint: yellow;
 
-
-:root{
-    .dark-theme {
-        --ion-color-primary: yellow;
-        --ion-color-primary-rgb: 56, 128, 255;
-        --ion-color-primary-contrast: #ffffff;
-        --ion-color-primary-contrast-rgb: 255, 255, 255;
-        --ion-color-primary-shade: yellow;
-        --ion-color-primary-tint: yellow;
-
-        ion-content{
-            --background: #484847;
-        }
-
+    ion-content {
+      --background: #484847;
     }
 
-    .orang-theme{
+    main {
+      --background: #484847;
+    }
+  }
 
-
-        /**
+  .orang-theme {
+    /**
         -----------------------
         Global
         -----------------------
         **/
 
-        ion-content{
-            --background: var(--ion-color-orang-gradient);
-        }
+    ion-content {
+      --background: var(--ion-color-orang-gradient);
+    }
 
-        .navbar{
-            background: var(--ion-color-orang-gradient);    
-        }
+    main {
+      background-image: linear-gradient(
+        90deg,
+        rgba(249, 182, 106, 1) 0%,
+        rgba(201, 100, 26, 1) 100%,
+        rgba(201, 100, 26, 1) 100%
+      );
+    }
 
-        .seek-bar{
-            background: rgba(255, 255, 255, 0.5);
-            box-shadow: 1px 10px 30px 1px white;
-        }
-        
-        .button-theme{
-            background: #F7B367;
-            border-color: #FFFFFF; 
-        }
+    .navbar {
+      background: var(--ion-color-orang-gradient);
+    }
 
-        /**
+    .seek-bar {
+      background: rgba(255, 255, 255, 0.5);
+      box-shadow: 1px 10px 30px 1px white;
+    }
+
+    .button-theme {
+      background: #f7b367;
+      border-color: #ffffff;
+    }
+
+    /**
         -----------------------
         Home Page
         -----------------------
         **/
 
-        .first{
-            border: 10px;
-            border-color: white;
-            background: white;
-            color: black;
-        }
-        .second{
-            border: 10px;
-            border-color: white;
-            background: white;
-            color: black;
-        }
-        .third{
-            border: 10px;
-            border-color: white;
-            background: white;
-            color: black;
-        }
-        .fourth{
-            border: 10px;
-            border-color: white;
-            background: white;
-            color: black;
-        }
-
-        
+    .first {
+      border: 10px;
+      border-color: white;
+      background: white;
+      color: black;
     }
+    .second {
+      border: 10px;
+      border-color: white;
+      background: white;
+      color: black;
+    }
+    .third {
+      border: 10px;
+      border-color: white;
+      background: white;
+      color: black;
+    }
+    .fourth {
+      border: 10px;
+      border-color: white;
+      background: white;
+      color: black;
+    }
+  }
 
-    .blue-theme{
-
-
-
-        /**
+  .blue-theme {
+    /**
         -----------------------
         Global
         -----------------------
         **/
 
-        ion-content{
-            --background: var(--ion-color-blue-gradient);
-        }
+    ion-content {
+      --background: var(--ion-color-blue-gradient);
+    }
 
-        .navbar{
-            background: var(--ion-color-blue-gradient);
-            // background: linear-gradient(90deg, rgba(61, 66, 72 ,1) 0%, rgba(37, 37, 41 ,1) 100%, rgba(37, 37, 41 ,1) 100%);
-        }
+    main {
+      background-image: linear-gradient(
+        90deg,
+        rgba(61, 66, 72, 1) 0%,
+        rgba(37, 37, 41, 1) 100%,
+        rgba(37, 37, 41, 1) 100%
+      );
+    }
 
-        .seek-bar{
-            background: #08E6F6;
-            box-shadow: 1px 10px 30px 1px #08E6F6;
-        }
+    .navbar {
+      background: var(--ion-color-blue-gradient);
+      // background: linear-gradient(90deg, rgba(61, 66, 72 ,1) 0%, rgba(37, 37, 41 ,1) 100%, rgba(37, 37, 41 ,1) 100%);
+    }
 
-        .button-theme{
-            background: #2D2F33; 
-            border-color: #FFFFFF; 
-        }
-        
-        /**
+    .seek-bar {
+      background: #08e6f6;
+      box-shadow: 1px 10px 30px 1px #08e6f6;
+    }
+
+    .button-theme {
+      background: #2d2f33;
+      border-color: #ffffff;
+    }
+
+    /**
         -----------------------
         Home Page
         -----------------------
         **/
 
-        .first{
-            background: #484747;
-            border-color: #484747; 
-            box-shadow: 4px 4px 4px rgba(8, 230, 246, 0.9);
-            color: white; 
-        }
-        .second{
-            background: #484747;
-            border-color: #484747; 
-            box-shadow: 4px 4px 4px rgba(8, 230, 246, 0.9);
-            color: white; 
-        }
-        .third{
-            background: #484747;
-            border-color: #484747; 
-            box-shadow: 4px 4px 4px rgba(8, 230, 246, 0.9);
-            color: white; 
-        }
-        .fourth{
-            background: #484747;
-            border-color: #484747; 
-            box-shadow: 4px 4px 4px rgba(8, 230, 246, 0.9);
-            color: white; 
-        }
+    .first {
+      background: #484747;
+      border-color: #484747;
+      box-shadow: 4px 4px 4px rgba(8, 230, 246, 0.9);
+      color: white;
+    }
+    .second {
+      background: #484747;
+      border-color: #484747;
+      box-shadow: 4px 4px 4px rgba(8, 230, 246, 0.9);
+      color: white;
+    }
+    .third {
+      background: #484747;
+      border-color: #484747;
+      box-shadow: 4px 4px 4px rgba(8, 230, 246, 0.9);
+      color: white;
+    }
+    .fourth {
+      background: #484747;
+      border-color: #484747;
+      box-shadow: 4px 4px 4px rgba(8, 230, 246, 0.9);
+      color: white;
+    }
 
-
-        /**
+    /**
         -----------------------
         Library
         -----------------------
         **/
 
-        .text3{
-            color: lightgray;
-        }
+    .text3 {
+      color: lightgray;
+    }
 
-        /**
+    /**
         -----------------------
         Play menu
         -----------------------
         **/
 
-        .disk::before{
-            background: #2D2D35;
-        }
+    .disk::before {
+      background: #2d2d35;
     }
+  }
 
-    .purple-theme{
-        
-
-        /**
+  .purple-theme {
+    /**
         -----------------------
         Global
         -----------------------
         **/
 
-        ion-content{
-            --background: var(--ion-color-purple-gradient);
-        }
+    ion-content {
+      --background: var(--ion-color-purple-gradient);
+    }
 
-        .navbar{
-            background: var(--ion-color-purple-gradient);
-        }
+    main {
+      background-image: linear-gradient(
+        90deg,
+        rgba(91, 0, 106, 1) 0%,
+        rgba(30, 0, 42, 1) 100%,
+        rgba(30, 0, 42, 1) 100%
+      );
+    }
 
-        .seek-bar{
-            background: #FEB9FD; 
-            box-shadow: 1px 10px 30px 1px #FEB9FD;
-        }
+    .navbar {
+      background: var(--ion-color-purple-gradient);
+    }
 
-        .button-theme{
-            background: #6A007D; 
-            border-color: #FEB9FD; 
-        }
+    .seek-bar {
+      background: #feb9fd;
+      box-shadow: 1px 10px 30px 1px #feb9fd;
+    }
 
-        /**
+    .button-theme {
+      background: #6a007d;
+      border-color: #feb9fd;
+    }
+
+    /**
         -----------------------
         Settings
         -----------------------
         **/
-        
-        .setting1{
-            border-color: #FEB9FD; 
-        }
-        .setting2{
-            border-color: #FEB9FD; 
-        }
-        .setting3{
-            border-color: #FEB9FD; 
-        }
-        .setting4{
-            border-color: #FEB9FD; 
-        }
 
+    .setting1 {
+      border-color: #feb9fd;
+    }
+    .setting2 {
+      border-color: #feb9fd;
+    }
+    .setting3 {
+      border-color: #feb9fd;
+    }
+    .setting4 {
+      border-color: #feb9fd;
+    }
 
-        /**
+    /**
         -----------------------
         Home Page
         -----------------------
         **/
 
-        .first{
-            background: rgba(72, 71, 71, 0.4);
-            border-color: rgba(72, 71, 71, 0); 
-            box-shadow: 4px 4px 4px rgba(254, 185, 253, 0.9);
-            color: white; 
-        }
-        .second{
-            background: rgba(72, 71, 71, 0.4);
-            border-color: rgba(72, 71, 71, 0); 
-            box-shadow: 4px 4px 4px rgba(254, 185, 253, 0.9);
-            color: white; 
-        }
-        .third{
-            background: rgba(72, 71, 71, 0.4);
-            border-color: rgba(72, 71, 71, 0); 
-            box-shadow: 4px 4px 4px rgba(254, 185, 253, 0.9);
-            color: white; 
-        }
-        .fourth{
-            background: rgba(72, 71, 71, 0.4);
-            border-color: rgba(72, 71, 71, 0); 
-            box-shadow: 4px 4px 4px rgba(254, 185, 253, 0.9);
-            color: white; 
-        }
+    .first {
+      background: rgba(72, 71, 71, 0.4);
+      border-color: rgba(72, 71, 71, 0);
+      box-shadow: 4px 4px 4px rgba(254, 185, 253, 0.9);
+      color: white;
+    }
+    .second {
+      background: rgba(72, 71, 71, 0.4);
+      border-color: rgba(72, 71, 71, 0);
+      box-shadow: 4px 4px 4px rgba(254, 185, 253, 0.9);
+      color: white;
+    }
+    .third {
+      background: rgba(72, 71, 71, 0.4);
+      border-color: rgba(72, 71, 71, 0);
+      box-shadow: 4px 4px 4px rgba(254, 185, 253, 0.9);
+      color: white;
+    }
+    .fourth {
+      background: rgba(72, 71, 71, 0.4);
+      border-color: rgba(72, 71, 71, 0);
+      box-shadow: 4px 4px 4px rgba(254, 185, 253, 0.9);
+      color: white;
+    }
 
-        /**
+    /**
         -----------------------
         Library
         -----------------------
         **/
 
-        .text3{
-            color: lightgray;
-        }
+    .text3 {
+      color: lightgray;
+    }
 
-        /**
+    /**
         -----------------------
         Play menu
         -----------------------
         **/
 
-        .disk::before{
-            background: #2D2D35;
-        }
+    .disk::before {
+      background: #2d2d35;
     }
+  }
 
-    .yelgre-theme{
-        
-
-        /**
+  .yelgre-theme {
+    /**
         -----------------------
         Global
         -----------------------
         **/
 
-        ion-content{
-            --background: var(--ion-color-yelgre-gradient);
-        }
+    ion-content {
+      --background: var(--ion-color-yelgre-gradient);
+    }
 
-        .navbar{
-            background: linear-gradient(180deg, rgba(241,206,54,1) 0%, rgba(255,205,35,1) 100%);
-        }
+    main {
+      background-image: linear-gradient(
+        180deg,
+        rgba(38, 156, 57, 1) 0%,
+        rgba(255, 205, 35, 1) 100%
+      );
+    }
 
-        .seek-bar{
-            background: rgba(255, 255, 255, 0.5);
-            box-shadow: 1px 10px 30px 1px white;
-        }
+    .navbar {
+      background: linear-gradient(
+        180deg,
+        rgba(241, 206, 54, 1) 0%,
+        rgba(255, 205, 35, 1) 100%
+      );
+    }
 
-        .button-theme{
-            background: #99B62D; 
-            border-color: #FFFFFF; 
-        }
+    .seek-bar {
+      background: rgba(255, 255, 255, 0.5);
+      box-shadow: 1px 10px 30px 1px white;
+    }
 
-        /**
+    .button-theme {
+      background: #99b62d;
+      border-color: #ffffff;
+    }
+
+    /**
         -----------------------
         Settings
         -----------------------
         **/
-        
 
-        /**
+    /**
         -----------------------
         Home Page
         -----------------------
         **/
 
-        .first{
-            border: 10px;
-            border-color: white;
-            background: white;
-            color: black;
-        }
-        .second{
-            border: 10px;
-            border-color: white;
-            background: white;
-            color: black;
-        }
-        .third{
-            border: 10px;
-            border-color: white;
-            background: white;
-            color: black;
-        }
-        .fourth{
-            border: 10px;
-            border-color: white;
-            background: white;
-            color: black;
-        }
+    .first {
+      background: rgba(72, 71, 71, 0.4);
+      border-color: rgba(72, 71, 71, 0);
+      color: white;
+    }
+    .second {
+      background: rgba(72, 71, 71, 0.4);
+      border-color: rgba(72, 71, 71, 0);
+      color: white;
+    }
+    .third {
+      background: rgba(72, 71, 71, 0.4);
+      border-color: rgba(72, 71, 71, 0);
+      color: white;
+    }
+    .fourth {
+      background: rgba(72, 71, 71, 0.4);
+      border-color: rgba(72, 71, 71, 0);
+      color: white;
+    }
 
-        /**
+    /**
         -----------------------
         Library
         -----------------------
         **/
 
-
-        /**
+    /**
         -----------------------
         Play menu
         -----------------------
         **/
+  }
 
-
-    }
-
-    .salmon-theme{
-        
-
-        /**
+  .salmon-theme {
+    /**
         -----------------------
         Global
         -----------------------
         **/
 
-        ion-content{
-            --background: var(--ion-color-salmon-gradient);
-        }
+    ion-content {
+      --background: var(--ion-color-salmon-gradient);
+    }
 
-        .navbar{
-            background: linear-gradient(180deg, rgba(219,117,58,1) 0%, rgba(215,114,48,1) 100%);
-        }
+    main {
+      background-image: linear-gradient(
+        180deg,
+        rgba(255, 95, 109, 1) 0%,
+        rgba(215, 114, 48, 1) 100%
+      );
+    }
 
-        .seek-bar{
-            background: rgba(255, 255, 255, 0.5);
-            box-shadow: 1px 10px 30px 1px white;
-        }
+    .navbar {
+      background: linear-gradient(
+        180deg,
+        rgba(219, 117, 58, 1) 0%,
+        rgba(215, 114, 48, 1) 100%
+      );
+    }
 
-        .button-theme{
-            background: #EA694D; 
-            border-color: #FFFFFF; 
-        }
+    .seek-bar {
+      background: rgba(255, 255, 255, 0.5);
+      box-shadow: 1px 10px 30px 1px white;
+    }
 
-        /**
+    .button-theme {
+      background: #ea694d;
+      border-color: #ffffff;
+    }
+
+    /**
         -----------------------
         Settings
         -----------------------
         **/
-        
 
-        /**
+    /**
         -----------------------
         Home Page
         -----------------------
         **/
 
-        .first{
-            border: 10px;
-            border-color: white;
-            background: white;
-            color: black;
-        }
-        .second{
-            border: 10px;
-            border-color: white;
-            background: white;
-            color: black;
-        }
-        .third{
-            border: 10px;
-            border-color: white;
-            background: white;
-            color: black;
-        }
-        .fourth{
-            border: 10px;
-            border-color: white;
-            background: white;
-            color: black;
-        }
+    .first {
+      background: rgba(72, 71, 71, 0.4);
+      border-color: rgba(72, 71, 71, 0);
+      color: white;
+    }
+    .second {
+      background: rgba(72, 71, 71, 0.4);
+      border-color: rgba(72, 71, 71, 0);
+      color: white;
+    }
+    .third {
+      background: rgba(72, 71, 71, 0.4);
+      border-color: rgba(72, 71, 71, 0);
+      color: white;
+    }
+    .fourth {
+      background: rgba(72, 71, 71, 0.4);
+      border-color: rgba(72, 71, 71, 0);
+      color: white;
+    }
 
-        /**
+    /**
         -----------------------
         Library
         -----------------------
         **/
 
-
-        /**
+    /**
         -----------------------
         Play menu
         -----------------------
         **/
+  }
 
+  .yelblu-theme {
+    /**
+        -----------------------
+        Global
+        -----------------------
+        **/
 
+    ion-content {
+      --background: var(--ion-color-yelblu-gradient);
     }
+
+    main {
+      background-image: linear-gradient(
+        180deg,
+        rgba(0, 255, 231, 1) 0%,
+        rgba(245, 255, 2, 1) 100%
+      );
+    }
+
+    .navbar {
+      background: linear-gradient(
+        180deg,
+        rgba(228, 255, 26, 1) 0%,
+        rgba(245, 255, 2, 1) 100%
+      );
+    }
+
+    .seek-bar {
+      background: rgba(255, 255, 255, 0.5);
+      box-shadow: 1px 10px 30px 1px white;
+    }
+
+    .button-theme {
+      background: #56ff96;
+      border-color: #ffffff;
+    }
+
+    /**
+        -----------------------
+        Settings
+        -----------------------
+        **/
+
+    /**
+        -----------------------
+        Home Page
+        -----------------------
+        **/
+
+    .first {
+      background: rgba(72, 71, 71, 0.4);
+      border-color: rgba(72, 71, 71, 0);
+      color: white;
+    }
+    .second {
+      background: rgba(72, 71, 71, 0.4);
+      border-color: rgba(72, 71, 71, 0);
+      color: white;
+    }
+    .third {
+      background: rgba(72, 71, 71, 0.4);
+      border-color: rgba(72, 71, 71, 0);
+      color: white;
+    }
+    .fourth {
+      background: rgba(72, 71, 71, 0.4);
+      border-color: rgba(72, 71, 71, 0);
+      color: white;
+    }
+
+    /**
+        -----------------------
+        Library
+        -----------------------
+        **/
+
+    /**
+        -----------------------
+        Play menu
+        -----------------------
+        **/
+  }
 }

@@ -13,6 +13,7 @@ import { AngularFirestore } from '@angular/fire/compat/firestore';
 import { Observable } from 'rxjs';
 import { tap } from 'rxjs/operators';
 import { ActivatedRoute } from '@angular/router';
+import { ThemeService } from '../../services/theme.service';
 
 export interface Track {
   name: string;
@@ -122,7 +123,7 @@ export class HamburgerTestPage implements OnInit {
     playBtn();
   }
 
-  constructor(firestore: Firestore) {
+  constructor(firestore: Firestore, private theme: ThemeService) {
     const ref = collection(firestore, 'tracks');
     const q = query(ref, where('track', '==', '1'));
     this.item$ = collectionData(q);
@@ -136,14 +137,32 @@ export class HamburgerTestPage implements OnInit {
       .subscribe();
   }
 
+  enableOrang() {
+    this.theme.enableOrang();
+  }
+
+  enableBlue() {
+    this.theme.enableBlue();
+  }
+
+  enablePurple() {
+    this.theme.enablePurple();
+  }
+
+  enableYelgre() {
+    this.theme.enableYelgre();
+  }
+
+  enableSalmon() {
+    this.theme.enableSalmon();
+  }
+
   start(track: any) {
     if (this.player) {
       this.player.stop();
     }
     this.activeTrack = track;
-    const disk: any = document.querySelector('.disk');
-    console.log(track);
-    disk.style.backgroundImage = `url(${track.img})`;
+    console.log(this.activeTrack);
     this.player = new Howl({
       src: [track.path],
       html5: true,
@@ -155,6 +174,8 @@ export class HamburgerTestPage implements OnInit {
       onend: () => {},
     });
     this.player.play();
+    const disk: HTMLDivElement = document.querySelector('.disk');
+    disk.style.backgroundImage = `url('${track.img}')`;
   }
 
   togglePlayer(pause) {

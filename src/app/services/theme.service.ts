@@ -43,4 +43,8 @@ export class ThemeService {
   enableSalmon() {
     this.store.dispatch(new SetTheme('salmon'));
   }
+
+  enableYelblu() {
+    this.store.dispatch(new SetTheme('yelblu'));
+  }
 }

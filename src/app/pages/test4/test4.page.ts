@@ -7,11 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./test4.page.scss'],
 })
 export class Test4Page implements OnInit {
+  constructor(private theme: ThemeService) {}
 
-  constructor(private theme: ThemeService) { }
-
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
   enableOrang() {
     this.theme.enableOrang();
@@ -33,4 +31,7 @@ export class Test4Page implements OnInit {
     this.theme.enableSalmon();
   }
 
+  enableYelblu() {
+    this.theme.enableYelblu();
+  }
 }
