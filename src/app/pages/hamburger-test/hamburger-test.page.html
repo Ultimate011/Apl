@@ -71,10 +71,17 @@
   </div>
 
   <input type="checkbox" id="myInput" />
-  <label class="testham" for="myInput">
-    <span class="bar top"></span>
-    <span class="bar middle"></span>
-    <span class="bar bottom"></span>
+  <label class="icon-change" for="myInput">
+    <ion-icon
+      name="disc-sharp"
+      class="disc-icon"
+      (click)="enableHamburger()"
+    ></ion-icon>
+    <ion-icon
+      name="chevron-back-outline"
+      class="disc-icon2"
+      (click)="enableHamburger2()"
+    ></ion-icon>
   </label>
   <aside>
     <div class="aside-section aside-left">

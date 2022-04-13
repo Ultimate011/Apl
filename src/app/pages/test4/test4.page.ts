@@ -32,6 +32,6 @@ export class Test4Page implements OnInit {
   }
 
   enableYelblu() {
-    this.theme.enableYelblu();
+    this.theme.enableSummer();
   }
 }

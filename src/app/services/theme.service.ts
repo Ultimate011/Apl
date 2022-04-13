@@ -44,7 +44,17 @@ export class ThemeService {
     this.store.dispatch(new SetTheme('salmon'));
   }
 
-  enableYelblu() {
-    this.store.dispatch(new SetTheme('yelblu'));
+  enableSummer() {
+    this.store.dispatch(new SetTheme('summer'));
+  }
+
+  enableDisc_icon_change() {
+    this.renderer.addClass(this.document.body, 'icon-change2');
+    this.renderer.removeClass(this.document.body, 'icon-change');
+  }
+
+  enableDisc_icon_change2() {
+    this.renderer.addClass(this.document.body, 'icon-change');
+    this.renderer.removeClass(this.document.body, 'icon-change2');
   }
 }

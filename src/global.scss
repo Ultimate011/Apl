@@ -467,7 +467,7 @@
         **/
   }
 
-  .yelblu-theme {
+  .summer-theme {
     /**
         -----------------------
         Global
@@ -475,7 +475,7 @@
         **/
 
     ion-content {
-      --background: var(--ion-color-yelblu-gradient);
+      --background: var(--ion-color-summer-gradient);
     }
 
     main {
@@ -548,5 +548,35 @@
         Play menu
         -----------------------
         **/
+  }
+
+  .icon-change {
+    .icon-change {
+      right: 5px;
+      top: -1px;
+    }
+
+    .disc-icon {
+      display: block;
+    }
+
+    .disc-icon2 {
+      display: none;
+    }
+  }
+
+  .icon-change2 {
+    .icon-change {
+      left: 12px;
+      top: -1px;
+    }
+
+    .disc-icon {
+      display: none;
+    }
+
+    .disc-icon2 {
+      display: block;
+    }
   }
 }

@@ -137,6 +137,14 @@ export class HamburgerTestPage implements OnInit {
       .subscribe();
   }
 
+  enableHamburger() {
+    this.theme.enableDisc_icon_change();
+  }
+
+  enableHamburger2() {
+    this.theme.enableDisc_icon_change2();
+  }
+
   enableOrang() {
     this.theme.enableOrang();
   }

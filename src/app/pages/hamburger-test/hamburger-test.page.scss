@@ -231,10 +231,6 @@ p {
   padding: 0;
 }
 
-.testham {
-  right: 5px;
-}
-
 /**
 -------------------------------
 Themes
@@ -628,12 +624,39 @@ Other
   font-family: segoe UI;
 }
 
+.icon-change {
+  right: 5px;
+  // left: 30px;
+  top: -1px;
+}
+
+// .testham2 {
+//   left: 5px;
+//   top: -1px;
+// }
+
 .settings {
   float: left;
   margin-top: 0.5rem;
   margin-left: 1rem;
   font-size: 34px;
   color: white;
+}
+
+.disc-icon {
+  // float: right;
+  // margin-top: 0.5rem;
+  // margin-left: 1rem;
+  font-size: 34px;
+  color: white;
+}
+.disc-icon2 {
+  // float: right;
+  // margin-top: 0.5rem;
+  // margin-left: 1rem;
+  font-size: 34px;
+  color: white;
+  display: none;
 }
 
 /**
@@ -895,7 +918,7 @@ ion-item {
 
 .scroll {
   width: 100%;
-  height: 44.6%;
+  height: 41.8%;
   overflow: auto;
   white-space: nowrap;
 }
