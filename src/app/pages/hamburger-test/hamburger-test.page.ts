@@ -12,6 +12,8 @@ import {
 import { AngularFirestore } from '@angular/fire/compat/firestore';
 import { Observable } from 'rxjs';
 import { tap } from 'rxjs/operators';
+import { ActivatedRoute } from '@angular/router';
+import { ThemeService } from '../../services/theme.service';
 
 export interface Track {
   name: string;
@@ -80,34 +82,34 @@ export class HamburgerTestPage implements OnInit {
       album: 'Xenoblade Chronicles 2',
     },
     {
-      name: 'In This Cruel Land', 
-      path: '../../../assets/In This Cruel Land.mp3', 
-      artist: 'Yuki Kajiura', 
+      name: 'In This Cruel Land',
+      path: '../../../assets/In This Cruel Land.mp3',
+      artist: 'Yuki Kajiura',
       album: 'Sword Art Online',
     },
     {
       name: 'Gunland',
-      path: '../../../assets/Gunland.mp3', 
-      artist: 'Yuki Kajiura', 
+      path: '../../../assets/Gunland.mp3',
+      artist: 'Yuki Kajiura',
       album: 'Sword Art Online',
     },
     {
-      name: 'Sea-P-U Remix', 
-      path: "../../../assets/'Sea-P-U' Blitz It! by the Chirpy Chips (Remix) - Splatoon 2.mp3", 
-      artist: 'Sheddy', 
-      album: 'Splatoon 2 Remixes', 
+      name: 'Sea-P-U Remix',
+      path: "../../../assets/'Sea-P-U' Blitz It! by the Chirpy Chips (Remix) - Splatoon 2.mp3",
+      artist: 'Sheddy',
+      album: 'Splatoon 2 Remixes',
     },
     {
-      name: 'Void', 
-      path: '../../../assets/Terraria Calamity Mod Music - _void_ - Theme of The Lower Abyss.mp3', 
-      artist: 'DM DOKURO', 
+      name: 'Void',
+      path: '../../../assets/Terraria Calamity Mod Music - _void_ - Theme of The Lower Abyss.mp3',
+      artist: 'DM DOKURO',
       album: 'Calamity Mod',
     },
     {
       name: "I Wanna' Go Home - Eng Cover",
-      path: "../../../assets/ENGLISH _I Wanna' Go Home_ KonoSuba (Akane Sasu Sora).mp3", 
-      artist: 'Akane Sasu Sora', 
-      album: 'Konosuba', 
+      path: "../../../assets/ENGLISH _I Wanna' Go Home_ KonoSuba (Akane Sasu Sora).mp3",
+      artist: 'Akane Sasu Sora',
+      album: 'Konosuba',
     },
   ];
 
@@ -121,7 +123,7 @@ export class HamburgerTestPage implements OnInit {
     playBtn();
   }
 
-  constructor(firestore: Firestore) {
+  constructor(firestore: Firestore, private theme: ThemeService) {
     const ref = collection(firestore, 'tracks');
     const q = query(ref, where('track', '==', '1'));
     this.item$ = collectionData(q);
@@ -135,10 +137,40 @@ export class HamburgerTestPage implements OnInit {
       .subscribe();
   }
 
-  start(track: Track) {
+  enableHamburger() {
+    this.theme.enableDisc_icon_change();
+  }
+
+  enableHamburger2() {
+    this.theme.enableDisc_icon_change2();
+  }
+
+  enableOrang() {
+    this.theme.enableOrang();
+  }
+
+  enableBlue() {
+    this.theme.enableBlue();
+  }
+
+  enablePurple() {
+    this.theme.enablePurple();
+  }
+
+  enableYelgre() {
+    this.theme.enableYelgre();
+  }
+
+  enableSalmon() {
+    this.theme.enableSalmon();
+  }
+
+  start(track: any) {
     if (this.player) {
       this.player.stop();
     }
+    this.activeTrack = track;
+    console.log(this.activeTrack);
     this.player = new Howl({
       src: [track.path],
       html5: true,
@@ -150,6 +182,8 @@ export class HamburgerTestPage implements OnInit {
       onend: () => {},
     });
     this.player.play();
+    const disk: HTMLDivElement = document.querySelector('.disk');
+    disk.style.backgroundImage = `url('${track.img}')`;
   }
 
   togglePlayer(pause) {

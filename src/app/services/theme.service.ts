@@ -1,77 +1,60 @@
 import { DOCUMENT } from '@angular/common';
 import { Injectable, RendererFactory2, Inject, Renderer2 } from '@angular/core';
+import { Store } from '@ngxs/store';
+import { SetTheme } from '../states/app.actions';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ThemeService {
-  renderer: Renderer2; 
-  constructor(private rendererFactory: RendererFactory2, @Inject(DOCUMENT) private document: Document) { 
+  renderer: Renderer2;
+  constructor(
+    private rendererFactory: RendererFactory2,
+    @Inject(DOCUMENT) private document: Document,
+    private store: Store
+  ) {
     this.renderer = this.rendererFactory.createRenderer(null, null);
   }
-  
+
   enableDark() {
-    this.renderer.addClass(this.document.body, 'dark-theme');
-    this.renderer.removeClass(this.document.body, 'orang-theme');
-    this.renderer.removeClass(this.document.body, 'blue-theme');
-    this.renderer.removeClass(this.document.body, 'purple-theme');
-    this.renderer.removeClass(this.document.body, 'yelgre-theme');
-    this.renderer.removeClass(this.document.body, 'salmon-theme');
+    this.store.dispatch(new SetTheme('dark'));
   }
-  
-  
+
   enableLight() {
-    this.renderer.removeClass(this.document.body, 'dark-theme');
-    this.renderer.removeClass(this.document.body, 'orang-theme');
-    this.renderer.removeClass(this.document.body, 'blue-theme');
-    this.renderer.removeClass(this.document.body, 'purple-theme');
-    this.renderer.removeClass(this.document.body, 'yelgre-theme');
-    this.renderer.removeClass(this.document.body, 'salmon-theme');
+    this.store.dispatch(new SetTheme('light'));
   }
 
   enableOrang() {
-    this.renderer.addClass(this.document.body, 'orang-theme');
-    this.renderer.removeClass(this.document.body, 'dark-theme');
-    this.renderer.removeClass(this.document.body, 'blue-theme');
-    this.renderer.removeClass(this.document.body, 'purple-theme');
-    this.renderer.removeClass(this.document.body, 'yelgre-theme');
-    this.renderer.removeClass(this.document.body, 'salmon-theme');
+    this.store.dispatch(new SetTheme('orang'));
   }
 
   enableBlue() {
-    this.renderer.addClass(this.document.body, 'blue-theme');
-    this.renderer.removeClass(this.document.body, 'dark-theme');
-    this.renderer.removeClass(this.document.body, 'orang-theme');
-    this.renderer.removeClass(this.document.body, 'purple-theme');
-    this.renderer.removeClass(this.document.body, 'yelgre-theme');
-    this.renderer.removeClass(this.document.body, 'salmon-theme');
+    this.store.dispatch(new SetTheme('blue'));
   }
 
   enablePurple() {
-    this.renderer.addClass(this.document.body, 'purple-theme');
-    this.renderer.removeClass(this.document.body, 'dark-theme');
-    this.renderer.removeClass(this.document.body, 'orang-theme');
-    this.renderer.removeClass(this.document.body, 'blue-theme');
-    this.renderer.removeClass(this.document.body, 'yelgre-theme');
-    this.renderer.removeClass(this.document.body, 'salmon-theme');
+    this.store.dispatch(new SetTheme('purple'));
   }
 
   enableYelgre() {
-    this.renderer.addClass(this.document.body, 'yelgre-theme');
-    this.renderer.removeClass(this.document.body, 'dark-theme');
-    this.renderer.removeClass(this.document.body, 'orang-theme');
-    this.renderer.removeClass(this.document.body, 'blue-theme');
-    this.renderer.removeClass(this.document.body, 'purple-theme');
-    this.renderer.removeClass(this.document.body, 'salmon-theme');
+    this.store.dispatch(new SetTheme('yelgre'));
   }
 
   enableSalmon() {
-    this.renderer.addClass(this.document.body, 'salmon-theme');
-    this.renderer.removeClass(this.document.body, 'dark-theme');
-    this.renderer.removeClass(this.document.body, 'orang-theme');
-    this.renderer.removeClass(this.document.body, 'blue-theme');
-    this.renderer.removeClass(this.document.body, 'purple-theme');
-    this.renderer.removeClass(this.document.body, 'yelgre-theme');
+    this.store.dispatch(new SetTheme('salmon'));
   }
 
+  enableSummer() {
+    this.store.dispatch(new SetTheme('summer'));
+  }
+
+  enableDisc_icon_change() {
+    this.renderer.addClass(this.document.body, 'icon-change2');
+    this.renderer.removeClass(this.document.body, 'icon-change');
+  }
+
+  enableDisc_icon_change2() {
+    this.renderer.addClass(this.document.body, 'icon-change');
+    this.renderer.removeClass(this.document.body, 'icon-change2');
+  }
 }
