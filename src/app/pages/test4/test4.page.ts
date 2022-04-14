@@ -1,5 +1,6 @@
 import { ThemeService } from '../../services/theme.service';
 import { Component, OnInit } from '@angular/core';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-test4',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./test4.page.scss'],
 })
 export class Test4Page implements OnInit {
-  constructor(private theme: ThemeService) {}
+  constructor(private theme: ThemeService, private location: Location) {}
 
   ngOnInit() {}
 
@@ -33,5 +34,9 @@ export class Test4Page implements OnInit {
 
   enableYelblu() {
     this.theme.enableSummer();
+  }
+
+  myBackButton() {
+    this.location.back();
   }
 }

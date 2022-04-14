@@ -12,6 +12,7 @@ import {
 import { AngularFirestore } from '@angular/fire/compat/firestore';
 import { Observable } from 'rxjs';
 import { tap } from 'rxjs/operators';
+import { Location } from '@angular/common';
 
 export interface Track {
   name: string;
@@ -80,15 +81,15 @@ export class Test7Page implements OnInit {
       album: 'Xenoblade Chronicles 2',
     },
     {
-      name: 'In This Cruel Land', 
-      path: '../../../assets/In This Cruel Land.mp3', 
-      artist: 'Yuki Kajiura', 
+      name: 'In This Cruel Land',
+      path: '../../../assets/In This Cruel Land.mp3',
+      artist: 'Yuki Kajiura',
       album: 'Sword Art Online',
     },
     {
       name: 'Gunland',
-      path: '../../../assets/Gunland.mp3', 
-      artist: 'Yuki Kajiura', 
+      path: '../../../assets/Gunland.mp3',
+      artist: 'Yuki Kajiura',
       album: 'Sword Art Online',
     },
   ];
@@ -103,7 +104,7 @@ export class Test7Page implements OnInit {
     playBtn();
   }
 
-  constructor(firestore: Firestore) {
+  constructor(firestore: Firestore, private location: Location) {
     const ref = collection(firestore, 'tracks');
     const q = query(ref, where('artist', '==', 'Rei Kondoh'));
     this.item$ = collectionData(q);
@@ -176,4 +177,8 @@ export class Test7Page implements OnInit {
   }
 
   ngOnInit() {}
+
+  myBackButton() {
+    this.location.back();
+  }
 }
