@@ -278,6 +278,26 @@ margin-top: 3%;
     margin-right: 30px;
 }
 
+.icon-heartt{
+    font-size: 30px;
+    background-color: red;
+    
+}
+
+button{
+    background-color: transparent;
+    float: right;
+    margin-left: 352px;
+    // margin-bottom: -32px;
+    display: flex;
+    background-color: white;
+}
+
+.isActive{
+    color: red;
+}
+
+
 .playlist-item{
     display: flex;
     width: 100%;
