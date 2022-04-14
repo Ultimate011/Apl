@@ -137,6 +137,10 @@ export class HamburgerTestPage implements OnInit {
       .subscribe();
   }
 
+  enableButtonchange() {
+    this.theme.enableButtonchange();
+  }
+
   enableHamburger() {
     this.theme.enableDisc_icon_change();
   }

@@ -49,9 +49,31 @@
       <div class="playlist-item1">
         <ion-icon
           name="play-outline"
-          class="icon-play"
+          class="icon-play start-button"
           (click)="start(track)"
+          (click)="enableButtonchange()"
         ></ion-icon>
+        <ion-icon
+          name="play-outline"
+          class="icon-play play-pause"
+          (click)="togglePlayer(false)"
+          *ngIf="!isPlaying"
+          color="light"
+        >
+          <!-- <ion-icon slot="icon-only" name="play"></ion-icon> -->
+          <!-- <ion-icon slot="icon-only" name="play-outline"></ion-icon> -->
+        </ion-icon>
+
+        <ion-icon
+          name="pause-outline"
+          class="icon-pause play-pause"
+          (click)="togglePlayer(true)"
+          *ngIf="isPlaying"
+          color="light"
+        >
+          <!-- <ion-icon slot="icon-only" name="pause"></ion-icon> -->
+          <!-- <ion-icon slot="icon-only" name="pause-outline"></ion-icon> -->
+        </ion-icon>
         <ion-label
           class="Label"
           [color]="track == activeTrack ? 'success' : 'light' "

@@ -57,4 +57,8 @@ export class ThemeService {
     this.renderer.addClass(this.document.body, 'icon-change');
     this.renderer.removeClass(this.document.body, 'icon-change2');
   }
+
+  enableButtonchange() {
+    this.renderer.addClass(this.document.body, 'button-change');
+  }
 }

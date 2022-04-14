@@ -550,6 +550,16 @@
         **/
   }
 
+  .button-change {
+    .start-button {
+      display: none;
+    }
+
+    .play-pause {
+      display: block;
+    }
+  }
+
   .icon-change {
     .icon-change {
       right: 5px;
