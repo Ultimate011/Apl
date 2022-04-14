@@ -39,9 +39,6 @@ export class Test3Page implements OnInit {
     { State: false },
     { State: false },
     { State: false },
-    { State: false },
-
-
   ];
 
   activeCheck(name) {
