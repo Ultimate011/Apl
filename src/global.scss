@@ -63,6 +63,10 @@
       );
     }
 
+    ion-toolbar {
+      --opacity: 0;
+    }
+
     .navbar {
       background: var(--ion-color-orang-gradient);
     }
@@ -84,25 +88,21 @@
         **/
 
     .first {
-      border: 10px;
       border-color: white;
       background: white;
       color: black;
     }
     .second {
-      border: 10px;
       border-color: white;
       background: white;
       color: black;
     }
     .third {
-      border: 10px;
       border-color: white;
       background: white;
       color: black;
     }
     .fourth {
-      border: 10px;
       border-color: white;
       background: white;
       color: black;
@@ -127,6 +127,10 @@
         rgba(37, 37, 41, 1) 100%,
         rgba(37, 37, 41, 1) 100%
       );
+    }
+
+    ion-toolbar {
+      --opacity: 0;
     }
 
     .navbar {
@@ -214,6 +218,10 @@
         rgba(30, 0, 42, 1) 100%,
         rgba(30, 0, 42, 1) 100%
       );
+    }
+
+    ion-toolbar {
+      --opacity: 0;
     }
 
     .navbar {
@@ -320,6 +328,10 @@
       );
     }
 
+    ion-toolbar {
+      --opacity: 0;
+    }
+
     .navbar {
       background: linear-gradient(
         180deg,
@@ -403,6 +415,10 @@
       );
     }
 
+    ion-toolbar {
+      --opacity: 0;
+    }
+
     .navbar {
       background: linear-gradient(
         180deg,
@@ -484,6 +500,10 @@
         rgba(0, 255, 231, 1) 0%,
         rgba(245, 255, 2, 1) 100%
       );
+    }
+
+    ion-toolbar {
+      --opacity: 0;
     }
 
     .navbar {
@@ -579,6 +599,7 @@
     .icon-change {
       left: 12px;
       top: -1px;
+      width: 35px;
     }
 
     .disc-icon {

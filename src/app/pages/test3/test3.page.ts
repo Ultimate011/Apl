@@ -2,9 +2,7 @@ import { ThemeService } from '../../services/theme.service';
 import { Component, OnInit } from '@angular/core';
 import { NavController } from '@ionic/angular';
 import { Observable } from 'rxjs';
-
-
-
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-test3',
@@ -12,11 +10,9 @@ import { Observable } from 'rxjs';
   styleUrls: ['./test3.page.scss'],
 })
 export class Test3Page implements OnInit {
+  constructor(private theme: ThemeService, private location: Location) {}
 
-  constructor(private theme: ThemeService) { }
-
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
   enableOrang() {
     this.theme.enableOrang();
@@ -43,8 +39,10 @@ export class Test3Page implements OnInit {
 
   activeCheck(name) {
     console.log(name);
-    this.isActive =!this.isActive;
+    this.isActive = !this.isActive;
   }
 
-
+  myBackButton() {
+    this.location.back();
+  }
 }
