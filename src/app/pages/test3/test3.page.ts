@@ -1,5 +1,10 @@
 import { ThemeService } from '../../services/theme.service';
 import { Component, OnInit } from '@angular/core';
+import { NavController } from '@ionic/angular';
+import { Observable } from 'rxjs';
+
+
+
 
 @Component({
   selector: 'app-test3',
@@ -28,5 +33,21 @@ export class Test3Page implements OnInit {
   enableYelgre() {
     this.theme.enableYelgre();
   }
+
+  isActive: boolean = false;
+  buttonsState = [
+    { State: false },
+    { State: false },
+    { State: false },
+    { State: false },
+
+
+  ];
+
+  activeCheck(name) {
+    console.log(name);
+    this.isActive =!this.isActive;
+  }
+
 
 }
