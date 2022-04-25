@@ -36,6 +36,10 @@ export class Test4Page implements OnInit {
     this.theme.enableSummer();
   }
 
+  enableTest() {
+    this.theme.enableTest();
+  }
+
   myBackButton() {
     this.location.back();
   }

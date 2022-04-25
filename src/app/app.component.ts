@@ -34,6 +34,7 @@ export class AppComponent implements OnInit {
               this.renderer.removeClass(this.document.body, 'purple-theme');
               this.renderer.removeClass(this.document.body, 'yelgre-theme');
               this.renderer.removeClass(this.document.body, 'salmon-theme');
+              this.renderer.removeClass(this.document.body, 'test-theme');
               this.renderer.removeClass(this.document.body, 'summer-theme');
               break;
 
@@ -44,6 +45,7 @@ export class AppComponent implements OnInit {
               this.renderer.removeClass(this.document.body, 'purple-theme');
               this.renderer.removeClass(this.document.body, 'yelgre-theme');
               this.renderer.removeClass(this.document.body, 'salmon-theme');
+              this.renderer.removeClass(this.document.body, 'test-theme');
               this.renderer.removeClass(this.document.body, 'summer-theme');
               break;
 
@@ -54,6 +56,7 @@ export class AppComponent implements OnInit {
               this.renderer.removeClass(this.document.body, 'purple-theme');
               this.renderer.removeClass(this.document.body, 'yelgre-theme');
               this.renderer.removeClass(this.document.body, 'salmon-theme');
+              this.renderer.removeClass(this.document.body, 'test-theme');
               this.renderer.removeClass(this.document.body, 'summer-theme');
               break;
             case 'blue':
@@ -63,6 +66,7 @@ export class AppComponent implements OnInit {
               this.renderer.removeClass(this.document.body, 'purple-theme');
               this.renderer.removeClass(this.document.body, 'yelgre-theme');
               this.renderer.removeClass(this.document.body, 'salmon-theme');
+              this.renderer.removeClass(this.document.body, 'test-theme');
               this.renderer.removeClass(this.document.body, 'summer-theme');
               break;
             case 'purple':
@@ -72,6 +76,7 @@ export class AppComponent implements OnInit {
               this.renderer.removeClass(this.document.body, 'blue-theme');
               this.renderer.removeClass(this.document.body, 'yelgre-theme');
               this.renderer.removeClass(this.document.body, 'salmon-theme');
+              this.renderer.removeClass(this.document.body, 'test-theme');
               this.renderer.removeClass(this.document.body, 'summer-theme');
               break;
             case 'yelgre':
@@ -81,6 +86,7 @@ export class AppComponent implements OnInit {
               this.renderer.removeClass(this.document.body, 'blue-theme');
               this.renderer.removeClass(this.document.body, 'purple-theme');
               this.renderer.removeClass(this.document.body, 'salmon-theme');
+              this.renderer.removeClass(this.document.body, 'test-theme');
               this.renderer.removeClass(this.document.body, 'summer-theme');
               break;
             case 'salmon':
@@ -90,10 +96,22 @@ export class AppComponent implements OnInit {
               this.renderer.removeClass(this.document.body, 'blue-theme');
               this.renderer.removeClass(this.document.body, 'purple-theme');
               this.renderer.removeClass(this.document.body, 'yelgre-theme');
+              this.renderer.removeClass(this.document.body, 'test-theme');
               this.renderer.removeClass(this.document.body, 'summer-theme');
               break;
             case 'summer':
               this.renderer.addClass(this.document.body, 'summer-theme');
+              this.renderer.removeClass(this.document.body, 'salmon-theme');
+              this.renderer.removeClass(this.document.body, 'dark-theme');
+              this.renderer.removeClass(this.document.body, 'orang-theme');
+              this.renderer.removeClass(this.document.body, 'blue-theme');
+              this.renderer.removeClass(this.document.body, 'purple-theme');
+              this.renderer.removeClass(this.document.body, 'yelgre-theme');
+              this.renderer.removeClass(this.document.body, 'test-theme');
+              break;
+            case 'test':
+              this.renderer.addClass(this.document.body, 'test-theme');
+              this.renderer.removeClass(this.document.body, 'summer-theme');
               this.renderer.removeClass(this.document.body, 'salmon-theme');
               this.renderer.removeClass(this.document.body, 'dark-theme');
               this.renderer.removeClass(this.document.body, 'orang-theme');

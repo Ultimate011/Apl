@@ -570,6 +570,97 @@
         **/
   }
 
+  .test-theme {
+    /**
+        -----------------------
+        Global
+        -----------------------
+        **/
+
+    ion-content {
+      --background: var(--ion-color-test-gradient);
+    }
+
+    main {
+      background: linear-gradient(
+        180deg,
+        rgba(98, 239, 247, 1) 0%,
+        rgba(249, 255, 255, 1) 100%
+      );
+    }
+
+    ion-toolbar {
+      --opacity: 0;
+    }
+
+    .navbar {
+      background: linear-gradient(
+        180deg,
+        rgba(239, 254, 254, 1) 0%,
+        rgba(249, 255, 255, 1) 100%
+      );
+    }
+
+    .navbar a {
+      color: darkgrey;
+    }
+
+    .seek-bar {
+      background: rgba(0, 0, 0, 0.5);
+      box-shadow: 1px 10px 30px 1px black;
+    }
+
+    .button-theme {
+      background: #c8fafc;
+      border-color: #ffffff;
+    }
+
+    /**
+        -----------------------
+        Settings
+        -----------------------
+        **/
+
+    /**
+        -----------------------
+        Home Page
+        -----------------------
+        **/
+
+    .first {
+      background: rgba(72, 71, 71, 0.4);
+      border-color: rgba(72, 71, 71, 0);
+      color: white;
+    }
+    .second {
+      background: rgba(72, 71, 71, 0.4);
+      border-color: rgba(72, 71, 71, 0);
+      color: white;
+    }
+    .third {
+      background: rgba(72, 71, 71, 0.4);
+      border-color: rgba(72, 71, 71, 0);
+      color: white;
+    }
+    .fourth {
+      background: rgba(72, 71, 71, 0.4);
+      border-color: rgba(72, 71, 71, 0);
+      color: white;
+    }
+
+    /**
+        -----------------------
+        Library
+        -----------------------
+        **/
+
+    /**
+        -----------------------
+        Play menu
+        -----------------------
+        **/
+  }
+
   .button-change {
     .start-button {
       display: none;

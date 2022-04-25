@@ -48,6 +48,10 @@ export class ThemeService {
     this.store.dispatch(new SetTheme('summer'));
   }
 
+  enableTest() {
+    this.store.dispatch(new SetTheme('test'));
+  }
+
   enableDisc_icon_change() {
     this.renderer.addClass(this.document.body, 'icon-change2');
     this.renderer.removeClass(this.document.body, 'icon-change');

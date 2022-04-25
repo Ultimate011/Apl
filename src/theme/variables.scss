@@ -38,6 +38,12 @@
     rgba(245, 255, 2, 1) 100%
   );
 
+  --ion-color-test-gradient: linear-gradient(
+    180deg,
+    rgba(98, 239, 247, 1) 0%,
+    rgba(249, 255, 255, 1) 100%
+  );
+
   /** primary **/
   --ion-color-primary: #3880ff;
   --ion-color-primary-rgb: 56, 128, 255;
