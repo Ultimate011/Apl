@@ -173,29 +173,32 @@ export class HamburgerTestPage implements OnInit {
     if (this.player) {
       this.player.stop();
     }
-    this.activeTrack = track;
-    console.log(this.activeTrack);
-    this.player = new Howl({
-      src: [track.path],
-      html5: true,
-      onplay: () => {
-        this.isPlaying = true;
-        this.activeTrack = track;
-        this.updateProgress;
-      },
-      onend: () => {},
-    });
+
+    if (this.activeTrack?.path !== track.path) {
+      this.player = new Howl({
+        src: [track.path],
+        html5: true,
+        onplay: () => {
+          this.isPlaying = true;
+          this.activeTrack = track;
+          this.updateProgress();
+        },
+        onend: () => {},
+      });
+    }
+
     this.player.play();
     const disk: HTMLDivElement = document.querySelector('.disk');
     disk.style.backgroundImage = `url('${track.img}')`;
   }
 
-  togglePlayer(pause) {
+  togglePlayer(pause, track: any) {
     this.isPlaying = !pause;
+
     if (pause) {
       this.player.pause();
     } else {
-      this.player.play();
+      this.start(track);
     }
   }
 
@@ -228,7 +231,7 @@ export class HamburgerTestPage implements OnInit {
     this.progress = (seek / this.player.duration()) * 100 || 0;
     setTimeout(() => {
       this.updateProgress();
-    }, 100);
+    }, 1000);
   }
 
   ngOnInit() {}

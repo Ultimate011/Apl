@@ -56,8 +56,8 @@
         <ion-icon
           name="play-outline"
           class="icon-play play-pause"
-          (click)="togglePlayer(false)"
-          *ngIf="!isPlaying"
+          (click)="togglePlayer(false, track)"
+          *ngIf="!isPlaying || activeTrack.path !== track.path"
           color="light"
         >
           <!-- <ion-icon slot="icon-only" name="play"></ion-icon> -->
@@ -67,8 +67,8 @@
         <ion-icon
           name="pause-outline"
           class="icon-pause play-pause"
-          (click)="togglePlayer(true)"
-          *ngIf="isPlaying"
+          (click)="togglePlayer(true, track)"
+          *ngIf="isPlaying && activeTrack.path === track.path"
           color="light"
         >
           <!-- <ion-icon slot="icon-only" name="pause"></ion-icon> -->
@@ -201,7 +201,7 @@
               #range
               [(ngModel)]="progress"
               max="100"
-              color="success"
+              color="light"
               (touchend)="seek()"
               (mouseup)="seek()"
             >

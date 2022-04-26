@@ -367,6 +367,15 @@ Other
   }
 }
 
+.half-circle {
+  width: 200px;
+  height: 100px;
+  border-top-left-radius: 110px;
+  border-top-right-radius: 110px;
+  border: 10px solid gray;
+  border-bottom: 0;
+}
+
 /**
 -------------------------------
           Navbar          
@@ -461,6 +470,7 @@ Other
   margin-right: 15px;
   margin-bottom: 100px;
   color: white;
+  display: none;
 }
 
 .icon-shuffle {
@@ -469,6 +479,7 @@ Other
   margin-right: 15px;
   margin-bottom: 100px;
   color: white;
+  display: none;
 }
 
 // .buttons-disk{
@@ -585,6 +596,11 @@ Media Query
     margin-right: 15px;
     margin-bottom: 100px;
     color: white;
+  }
+
+  .range {
+    display: flex;
+    width: 80%;
   }
 
   .title1 {
