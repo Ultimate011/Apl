@@ -32,86 +32,7 @@ declare var playBtn;
 })
 export class HamburgerTestPage implements OnInit {
   item$: Observable<any[]>;
-  playlist: Track[] = [
-    {
-      name: 'Ending Theme',
-      path: '../../../assets/Ending Theme  Octopath Traveler OST.mp3',
-      artist: 'Yasunori Nishiki',
-      album: 'Octopath Traveler',
-    },
-    {
-      name: 'A star in the morning sky',
-      path: '../../../assets/FE Three Houses OST  91 A Star in the Morning Sky.mp3',
-      artist: 'Rei Kondoh',
-      album: 'Fire Emblem Three Houses',
-    },
-    {
-      name: 'Conquest',
-      path: '../../../assets/21. Conquest (Calm_Ablaze) (Fates Version) _【Fire Emblem Fates OST_ Map Themes Mixed】 【HQ 1080p】 (1).mp3',
-      artist: 'Rei Kondoh',
-      album: 'Fire Emblem Awakening',
-    },
-    {
-      name: 'Dusk Falls',
-      path: '../../../assets/5. Dusk Falls (Calm_Fire) _【Fire Emblem Fates OST_ Map Themes Mixed】 【HQ 1080p】.mp3',
-      artist: 'Rei Kondoh',
-      album: 'Fire Emblem Fates',
-    },
-    {
-      name: 'March to Deliverance',
-      path: '../../../assets/BGM_0000008E [1].mp3',
-      artist: 'Takafumi Wada',
-      album: 'Fire Emblem Echoes',
-    },
-    {
-      name: 'Left Alone',
-      path: '../../../assets/Terraria Calamity Mod Music - Left Alone - Theme of Brimstone Elemental.mp3',
-      artist: 'DM DOKURO',
-      album: 'Calamity Mod',
-    },
-    {
-      name: 'Leviathan Trilogy',
-      path: '../../../assets/Terraria Calamity Mod Music - Leviathan Trilogy.mp3',
-      artist: 'DM DOKURO',
-      album: 'Calamity Mod',
-    },
-    {
-      name: 'Elysium in the Dream',
-      path: '../../../assets/Elysium in the Dream - Xenoblade Chronicles 2 OST [007].mp3',
-      artist: 'Yasunori Mitsuda',
-      album: 'Xenoblade Chronicles 2',
-    },
-    {
-      name: 'In This Cruel Land',
-      path: '../../../assets/In This Cruel Land.mp3',
-      artist: 'Yuki Kajiura',
-      album: 'Sword Art Online',
-    },
-    {
-      name: 'Gunland',
-      path: '../../../assets/Gunland.mp3',
-      artist: 'Yuki Kajiura',
-      album: 'Sword Art Online',
-    },
-    {
-      name: 'Sea-P-U Remix',
-      path: "../../../assets/'Sea-P-U' Blitz It! by the Chirpy Chips (Remix) - Splatoon 2.mp3",
-      artist: 'Sheddy',
-      album: 'Splatoon 2 Remixes',
-    },
-    {
-      name: 'Void',
-      path: '../../../assets/Terraria Calamity Mod Music - _void_ - Theme of The Lower Abyss.mp3',
-      artist: 'DM DOKURO',
-      album: 'Calamity Mod',
-    },
-    {
-      name: "I Wanna' Go Home - Eng Cover",
-      path: "../../../assets/ENGLISH _I Wanna' Go Home_ KonoSuba (Akane Sasu Sora).mp3",
-      artist: 'Akane Sasu Sora',
-      album: 'Konosuba',
-    },
-  ];
+  playlist: Track[];
 
   activeTrack: Track = null;
   player: Howl = null;
@@ -131,7 +52,7 @@ export class HamburgerTestPage implements OnInit {
     this.item$
       .pipe(
         tap((items) => {
-          console.log(items);
+          this.playlist = items;
         })
       )
       .subscribe();
@@ -170,11 +91,11 @@ export class HamburgerTestPage implements OnInit {
   }
 
   start(track: any) {
-    if (this.player) {
-      this.player.stop();
-    }
-
     if (this.activeTrack?.path !== track.path) {
+      if (this.player) {
+        this.player.stop();
+      }
+
       this.player = new Howl({
         src: [track.path],
         html5: true,
@@ -203,7 +124,10 @@ export class HamburgerTestPage implements OnInit {
   }
 
   next() {
-    let index = this.playlist.indexOf(this.activeTrack);
+    let index = this.playlist.findIndex(
+      (s) => s.path === this.activeTrack.path
+    );
+
     if (index != this.playlist.length - 1) {
       this.start(this.playlist[index + 1]);
     } else {
@@ -212,7 +136,10 @@ export class HamburgerTestPage implements OnInit {
   }
 
   prev() {
-    let index = this.playlist.indexOf(this.activeTrack);
+    let index = this.playlist.findIndex(
+      (s) => s.path === this.activeTrack.path
+    );
+
     if (index > 0) {
       this.start(this.playlist[index - 1]);
     } else {
@@ -226,11 +153,16 @@ export class HamburgerTestPage implements OnInit {
     this.player.seek(duration * (newValue / 100));
   }
 
-  updateProgress() {
+  updateProgress(lastProgress = 0) {
     let seek = this.player.seek();
-    this.progress = (seek / this.player.duration()) * 100 || 0;
+    this.progress = (seek / this.player.duration()) * 100;
+
+    if (lastProgress !== 0 && this.progress === 0) {
+      this.next();
+    }
+
     setTimeout(() => {
-      this.updateProgress();
+      this.updateProgress(this.progress);
     }, 1000);
   }
 

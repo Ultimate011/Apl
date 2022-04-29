@@ -160,8 +160,7 @@
           <div
             fill="clear"
             class="play-btn hide-bttn"
-            (click)="togglePlayer(false)"
-            (click)="playBtn()"
+            (click)="togglePlayer(isPlaying, activeTrack)"
             *ngIf="!isPlaying"
             color="light"
           >
